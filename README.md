@@ -1,6 +1,8 @@
 # Data Folks
 
-During the process of creating something it will always be more complicated when we are alone. Beyond being able to have the support of others, sometimes we'll need resources or references that allow us to go a step further, make us think outside the box, inspire us, and make us overcome our limits. That's why **data-folks** were created, to make it easier to get inspiration from these information designers;
+During the process of creating something it will always be more complicated when we are alone. Beyond being able to have the support of others, sometimes we'll need resources or references that allow us to go a step further, make us think outside the box, inspire us, and make us overcome our limits. That's why **data-folks** were created, to make it easier to get inspiration from these information designers.
+
+⚠️ **Building in public:** As the list grows, I'll consider creating divisions according to specialties and technologies used to visualize data. This will make it easier to navigate through the list.
 
 ## List
 
