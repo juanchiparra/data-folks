@@ -1,9 +1,9 @@
 ---
 name: Add me
-about: Request to be added to the list
-title: ''
+about: Request for changes in the list
+title: 'Request for changes in the list'
 labels: add me
-assignees: ''
+assignees: 'juanchiparra'
 
 ---
 <!--Answer the following questions to add a new record or edit an existing one. For each record, a new issue must be created-->
