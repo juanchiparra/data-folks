@@ -80,7 +80,7 @@ During the process of creating something it will always be more complicated when
 | Matthew Daniels          | https://matthewfdaniels.github.io/home/          |
 | Matthias Stahl           | https://www.higsch.com/                          |
 | Michela Lazzaroni        | https://www.behance.net/michelaz/projects        |
-| Michelle McGhee          | https://mmcghee.notion.site/Michelle-McGhee      |
+| Michelle McGhee          | [https://mmcghee.notion.site/Michelle-McGhee/](https://mmcghee.notion.site/Michelle-McGhee-b4e0346f98fd4cb988d025173c1e94a7/)|
 | Mira Rojanasakul         | https://mirarojanasakul.com/                     |
 | Mohamad Waked            | https://alhadaqa.com/                            |
 | Nadieh Bremer            | https://www.visualcinnamon.com/                  |
