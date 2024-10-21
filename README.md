@@ -90,6 +90,7 @@ During the process of creating something it will always be more complicated when
 | Nathan Yau               | https://flowingdata.com/                         |
 | Nicholas Felton          | https://feltron.com/                             |
 | Pablo Robles             | https://www.josepablorobles.com/                 |
+| Paul Murray              | https://paulmurray.io/                           |
 | Prinz Magtulis           | https://www.prinzmagtulis.com/                   |
 | Priya Padham             | https://public.tableau.com/app/profile/p.padham/ |
 | Rachael Dottle           | https://rachaeldottle.com/                       |
