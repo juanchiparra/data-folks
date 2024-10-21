@@ -66,6 +66,7 @@ During the process of creating something it will always be more complicated when
 | Laura Castro             | https://www.iamlauracastro.com                   |
 | Laura Martín             | https://lmartingrx.github.io/porfolio/           |
 | Laura Navarro Soler      | https://www.linkedin.com/in/laura-navarro-soler/ |
+| Leonardo Nicoletti       | https://www.leonardonicoletti.com/               |
 | Lindsey Poulter          | https://www.lindseypoulter.com/                  |
 | Lisa Charlotte Muth      | https://lisacharlottemuth.com/                   |
 | Lisa Hornung             | https://inside-numbers.com/                      |
