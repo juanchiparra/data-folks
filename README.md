@@ -39,7 +39,7 @@ During the process of creating something it will always be more complicated when
 | Elliot Bentley           | https://elliotbentley.com/                       |
 | Ethan Singer             | https://ethansinger.me/                          |
 | Evelina Parrou           | https://www.behance.net/evelinaj                 |
-| Federica Fragapane       | https://www.behance.net/FedericaFragapane        |
+| Florent Lavergne         | https://www.behance.net/lavergneflor             |
 | Gabrielle Merite         | https://www.gabriellemerite.com/                 |
 | Gemma Busquets           | https://www.gemmabusquets.com/                   |
 | Giorgia Lupi             | https://giorgialupi.com/                         |
@@ -91,6 +91,7 @@ During the process of creating something it will always be more complicated when
 | Nicholas Felton          | https://feltron.com/                             |
 | Pablo Robles             | https://www.josepablorobles.com/                 |
 | Paul Murray              | https://paulmurray.io/                           |
+| Peter Cook               | https://www.peterrcook.com/                      |
 | Prinz Magtulis           | https://www.prinzmagtulis.com/                   |
 | Priya Padham             | https://public.tableau.com/app/profile/p.padham/ |
 | Rachael Dottle           | https://rachaeldottle.com/                       |
