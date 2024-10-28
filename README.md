@@ -39,6 +39,7 @@ During the process of creating something it will always be more complicated when
 | Elliot Bentley           | https://elliotbentley.com/                       |
 | Ethan Singer             | https://ethansinger.me/                          |
 | Evelina Parrou           | https://www.behance.net/evelinaj                 |
+| Federica Fragapane       | https://www.behance.net/FedericaFragapane        |
 | Florent Lavergne         | https://www.behance.net/lavergneflor             |
 | Gabrielle Merite         | https://www.gabriellemerite.com/                 |
 | Gemma Busquets           | https://www.gemmabusquets.com/                   |
