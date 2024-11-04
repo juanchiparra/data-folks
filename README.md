@@ -112,6 +112,7 @@ During the process of creating something it will always be more complicated when
 | Szu Yu Chen              | https://chenszuyuuu.github.io/                   |
 | Taylor Maggiacomo        | https://www.taylormaggiacomo.com/                |
 | Thomas Oide              | https://thomasoide.github.io/                    |
+| Tiziana Alocci           | https://www.tizianaalocci.com/                   |
 | Tom Février              | https://tomfevrier.io/                           |
 | Victor Muñoz             | https://munozdataviz.com/                        |
 | Wendy Shijia             | https://wendyshijia.notion.site/                 |
