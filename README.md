@@ -51,6 +51,7 @@ During the process of creating something it will always be more complicated when
 | Irene de la Torre Arenas | https://irenedelatorrearenas.wordpress.com/      |
 | Jacopo Poletto           | https://jacopopoletto.com/                       |
 | Jan Diehm                | https://jandiehmdesigns.com/                     |
+| Jared Wilber             | https://www.jwilber.me/                          |
 | Jeremy C.F. Lin          | https://jeremycflin.github.io/                   |
 | Jin Wu                   | https://jinnwuu.github.io/portfolio/             |
 | Joel Eastwood            | http://joeleastwood.ca/                          |
