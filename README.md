@@ -105,6 +105,7 @@ During the process of creating something it will always be more complicated when
 | Sarah Fawson             | https://thedatasays.org/                         |
 | Sarah Kay Miller         | https://sarahkaymiller.com/                      |
 | Shirley Wu               | https://shirleywu.studio/                        |
+| Shri Khalpada	           | https://shrikhalpada.dev/                        |
 | Simon Scarr              | https://www.simonscarr.com/                      |
 | Simone Betito            | https://www.simonebetito.com/                    |
 | Stefan Pullen            | https://www.stefanpullen.com/                    |
