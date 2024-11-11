@@ -110,6 +110,7 @@ During the process of creating something it will always be more complicated when
 | Simone Betito            | https://www.simonebetito.com/                    |
 | Stefan Pullen            | https://www.stefanpullen.com/                    |
 | Stefania Guerra          | https://www.behance.net/stegue88e47f             |
+| Steven Ponce             | https://stevenponce.netlify.app/                 |
 | Szu Yu Chen              | https://chenszuyuuu.github.io/                   |
 | Taylor Maggiacomo        | https://www.taylormaggiacomo.com/                |
 | Thomas Oide              | https://thomasoide.github.io/                    |
