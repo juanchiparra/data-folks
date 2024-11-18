@@ -91,6 +91,7 @@ During the process of creating something it will always be more complicated when
 | Nadja Popovich           | https://nadjapopovich.com/                       |
 | Nathan Yau               | https://flowingdata.com/                         |
 | Nicholas Felton          | https://feltron.com/                             |
+| Nikita Rokotyan          | https://rokotyan.com/                            |
 | Pablo Robles             | https://www.josepablorobles.com/                 |
 | Paul Murray              | https://paulmurray.io/                           |
 | Peter Cook               | https://www.peterrcook.com/                      |
