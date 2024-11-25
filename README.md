@@ -80,6 +80,7 @@ During the process of creating something it will always be more complicated when
 | Martin Grandjean         | https://www.martingrandjean.ch/                  |
 | Martina Dossi            | https://www.behance.net/martinadossi             |
 | Martina Zunica           | https://www.behance.net/martinazunica_/          |
+| Matteo Palù	             | https://www.matteopalu.com/                      |
 | Matteo Riva              | https://crockhaus.com/                           |
 | Matthew Daniels          | https://matthewfdaniels.github.io/home/          |
 | Matthias Stahl           | https://www.higsch.com/                          |
