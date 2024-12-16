@@ -114,6 +114,7 @@ During the process of creating something it will always be more complicated when
 | Silvia Romanelli	       | https://silviaromanelli.com/                     |
 | Simon Scarr              | https://www.simonscarr.com/                      |
 | Simone Betito            | https://www.simonebetito.com/                    |
+| Simran Parwani           | https://simranparwani.github.io/                 |
 | Stefan Pullen            | https://www.stefanpullen.com/                    |
 | Stefania Guerra          | https://www.behance.net/stegue88e47f             |
 | Steven Ponce             | https://stevenponce.netlify.app/                 |
