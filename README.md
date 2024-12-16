@@ -125,6 +125,7 @@ During the process of creating something it will always be more complicated when
 | Tom Février              | https://tomfevrier.io/                           |
 | Victor Muñoz             | https://munozdataviz.com/                        |
 | Wendy Shijia             | https://wendyshijia.notion.site/                 |
+| Will Chase               | https://www.williamrchase.com/                   |
 | Wilson Andrews           | https://www.wilsonmarkandrews.com/               |
 | Yaryna Serkez            | https://yarynam.github.io/                       |
 | Yi Zhe Ang               | https://yizhe-ang.github.io/                     |
