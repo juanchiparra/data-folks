@@ -4,7 +4,7 @@ During the process of creating something it will always be more complicated when
 
 ⚠️ **Building in public:** As the list grows, I'll consider creating divisions according to specialties and technologies used to visualize data. This will make it easier to navigate through the list.
 
-❗By December 23, categories will be created to separate information designers according to specific areas.
+❗By December 30, categories will be created to separate information designers according to specific areas and a website will be created for a more visual way to review.
 
 ## List
 
