@@ -124,6 +124,7 @@ During the process of creating something it will always be more complicated when
 | Tiziana Alocci           | https://www.tizianaalocci.com/                   |
 | Tom Février              | https://tomfevrier.io/                           |
 | Victor Muñoz             | https://munozdataviz.com/                        |
+| Weiyi Cai                | https://www.caiweiyi.com/                        |
 | Wendy Shijia             | https://wendyshijia.notion.site/                 |
 | Will Chase               | https://www.williamrchase.com/                   |
 | Wilson Andrews           | https://www.wilsonmarkandrews.com/               |
