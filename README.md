@@ -98,6 +98,7 @@ During the process of creating something it will always be more complicated when
 | Pablo Robles             | https://www.josepablorobles.com/                 |
 | Paul Murray              | https://paulmurray.io/                           |
 | Peter Cook               | https://www.peterrcook.com/                      |
+| Prasanta Kumar Dutta	   | https://prasantakrdutta.com/                     |
 | Prinz Magtulis           | https://www.prinzmagtulis.com/                   |
 | Priya Padham             | https://public.tableau.com/app/profile/p.padham/ |
 | Rachael Dottle           | https://rachaeldottle.com/                       |
