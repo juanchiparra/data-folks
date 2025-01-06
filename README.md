@@ -4,7 +4,7 @@ During the process of creating something it will always be more complicated when
 
 ⚠️ **Building in public:** As the list grows, I'll consider creating divisions according to specialties and technologies used to visualize data. This will make it easier to navigate through the list.
 
-❗~By December 30~ January 07, categories will be created to separate information designers according to specific areas and a website will be created for a more visual way to review.
+❗By ~December 30~ January 07, categories will be created to separate information designers according to specific areas and a website will be created for a more visual way to review.
 
 ## List
 
@@ -30,6 +30,7 @@ During the process of creating something it will always be more complicated when
 | Cédric Sam               | https://cedric.sam.name/                         |
 | Chris Canipe             | https://chriscanipe.com/                         |
 | Connor Rothschild        | https://www.connorrothschild.com/                |
+| Curran Kelleher          | https://github.com/curran                        |
 | Daniel Gonzalez Cappa    | https://gcappa.com/                              |
 | Dea Bankova              | https://deabankova.com/                          |
 | Diana Estefanía Rubio    | https://www.dianaestefaniarubio.com/             |
