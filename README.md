@@ -2,6 +2,8 @@
 
 During the process of creating something it will always be more complicated when we are alone. Beyond being able to have the support of others, sometimes we'll need resources or references that allow us to go a step further, make us think outside the box, inspire us, and make us overcome our limits. That's why **data-folks** were created, to make it easier to get inspiration from these information designers.
 
+The fields were created under my personal opinion. It doesn't mean that this folk only knows about that subject, it's just that among everything he knows, this particular one has helped me.
+
 **The description of each field:**
 - Interactive: Those who usually do interactive visualizations, either with D3, Svelte...
 - Designer Those good at designing visualizations with programs such as Illustrator or Photoshop, or who tend to make static visualizations
