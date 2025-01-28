@@ -2,7 +2,12 @@
 
 During the process of creating something it will always be more complicated when we are alone. Beyond being able to have the support of others, sometimes we'll need resources or references that allow us to go a step further, make us think outside the box, inspire us, and make us overcome our limits. That's why **data-folks** were created, to make it easier to get inspiration from these information designers.
 
-⚠️ **Building in public:** As the list grows, I'll consider creating divisions according to specialties and technologies used to visualize data. This will make it easier to navigate through the list.
+**The description of each field:**
+- Interactive: Those who usually do interactive visualizations, either with D3, Svelte...
+- Designer Those good at designing visualizations with programs such as Illustrator or Photoshop, or who tend to make static visualizations
+- Mastermind: Those from whom I have been able to learn over the years, either by a book, a course, or even their publications on social media or their blog
+- Maps:Those who make maps in a thousand and one possible ways
+- Hands-on: Those who can create visualizations with pen and paper
 
 ## List
 
