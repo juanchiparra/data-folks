@@ -9,12 +9,9 @@ export default {
     }),
     prerender: {
       handleHttpError: ({ path, referrer, message }) => {
-        // Ignore 404 errors for specific paths
         if (path === '/projects') {
           return;
         }
-
-        // Log other errors
         console.error('Prerendering error:', message);
       }
     }
