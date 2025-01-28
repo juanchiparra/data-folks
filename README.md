@@ -74,7 +74,7 @@ During the process of creating something it will always be more complicated when
 | Marco Hernández          | https://mhinfographics.com/                                                                                                   | Mastermind  |
 | Mariano Zafra            | http://www.marianozafra.com/                                                                                                  | Maps        |
 | Marie Patino             | https://mariepatino.com/                                                                                                      | Interactive |
-| Marta Sierra             | https://www.martaviz.nl/                                                                                                      | Hand-On     |
+| Marta Sierra             | https://www.martaviz.nl/                                                                                                      | Hand-on     |
 | Martin Grandjean         | https://www.martingrandjean.ch/                                                                                               | Mastermind  |
 | Martina Dossi            | https://www.behance.net/martinadossi                                                                                          | Designer    |
 | Martina Zunica           | https://www.behance.net/martinazunica_/                                                                                       | Mastermind  |
