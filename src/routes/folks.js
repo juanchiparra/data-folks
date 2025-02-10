@@ -108,5 +108,8 @@ export const folks = [
 	{ id: 120, data: { name: 'Yaryna Serkez', page: 'https://yarynam.github.io/', type: 'interactive', image: './images/yaryna-serkez.png' } },
 	{ id: 121, data: { name: 'Yi Zhe Ang', page: 'https://yizhe-ang.github.io/', type: 'interactive', image: './images/yi-zhe-ang.png' } },
 	{ id: 122, data: { name: 'Zach Levitt', page: 'https://zachlevitt.com/', type: 'maps', image: './images/zach-levitt.png' } },
-	{ id: 123, data: { name: 'Curran Kelleher', page: 'https://github.com/curran ', type: 'mastermind', image: './images/curran-kelleher.png' } }
-  ];
+	{ id: 123, data: { name: 'Curran Kelleher', page: 'https://github.com/curran ', type: 'mastermind', image: './images/curran-kelleher.png' } },
+	{ id: 124, data: { name: 'Moritz Stefaner', page: 'https://truth-and-beauty.net/', type: 'interactive', image: './images/moritz-stefaner.png' } },
+	{ id: 125, data: { name: 'Fernando Becerra', page: 'https://www.fernandobecerra.com/', type: 'interactive', image: './images/fernando-becerra.png' } },
+	{ id: 126, data: { name: 'Harry Stevens', page: 'https://harryjstevens.com/', type: 'mastermind', image: './images/harry-stevens.png' } },
+];
