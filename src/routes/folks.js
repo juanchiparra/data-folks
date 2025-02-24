@@ -112,4 +112,5 @@ export const folks = [
 	{ id: 124, data: { name: 'Moritz Stefaner', page: 'https://truth-and-beauty.net/', type: 'interactive', image: './images/moritz-stefaner.png' } },
 	{ id: 125, data: { name: 'Fernando Becerra', page: 'https://www.fernandobecerra.com/', type: 'interactive', image: './images/fernando-becerra.png' } },
 	{ id: 126, data: { name: 'Harry Stevens', page: 'https://harryjstevens.com/', type: 'mastermind', image: './images/harry-stevens.png' } },
+	{ id: 127, data: { name: 'Nami Sumida', page: 'https://namisumida.github.io/', type: 'interactive', image: './images/nami-sumida.png' } },
 ];
