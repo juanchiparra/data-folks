@@ -46,12 +46,14 @@ The fields were created under my personal opinion. It doesn't mean that this fol
 | Ethan Singer             | https://ethansinger.me/                                                                                                       | Interactive |
 | Evelina Parrou           | https://www.behance.net/evelinaj                                                                                              | Designer    |
 | Federica Fragapane       | https://www.behance.net/FedericaFragapane                                                                                     | Mastermind  |
+| Fernando Becerra         | https://www.fernandobecerra.com/                                                                                              | Interactive |
 | Florent Lavergne         | https://www.behance.net/lavergneflor                                                                                          | Maps        |
 | Gabrielle Merite         | https://www.gabriellemerite.com/                                                                                              | Mastermind  |
 | Gemma Busquets           | https://www.gemmabusquets.com/                                                                                                | Mastermind  |
 | Giorgia Lupi             | https://giorgialupi.com/                                                                                                      | Mastermind  |
 | Gurman Bhatia            | https://gurmanbhatia.com/                                                                                                     | Interactive |
 | Han Huang                | https://jashcny.github.io/                                                                                                    | Interactive |
+| Harry Steven             | https://harryjstevens.com/                                                                                                    | Mastermind  |
 | Ihar Yanouski            | https://yanouski.com/                                                                                                         | Interactive |
 | Ilia Blinderman          | https://iliablinderman.com/                                                                                                   | Interactive |
 | Irene de la Torre Arenas | https://irenedelatorrearenas.wordpress.com/                                                                                   | Interactive |
@@ -93,8 +95,10 @@ The fields were created under my personal opinion. It doesn't mean that this fol
 | Michelle McGhee          | [https://mmcghee.notion.site/Michelle-McGhee/](https://mmcghee.notion.site/Michelle-McGhee-b4e0346f98fd4cb988d025173c1e94a7/) | Interactive |
 | Mira Rojanasakul         | https://mirarojanasakul.com/                                                                                                  | Maps        |
 | Mohamad Waked            | https://alhadaqa.com/                                                                                                         | Designer    |
+| Moritz Stefaner          | https://truth-and-beauty.net/                                                                                                 | Interactive |
 | Nadieh Bremer            | https://www.visualcinnamon.com/                                                                                               | Mastermind  |
 | Nadja Popovich           | https://nadjapopovich.com/                                                                                                    | Maps        |
+| Nami Sumida              | https://namisumida.github.io/                                                                                                 | Interactive |
 | Nathan Yau               | https://flowingdata.com/                                                                                                      | Mastermind  |
 | Nicholas Felton          | https://feltron.com/                                                                                                          | Designer    |
 | Nikita Rokotyan          | https://rokotyan.com/                                                                                                         | Interactive |
