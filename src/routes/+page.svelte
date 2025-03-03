@@ -100,10 +100,11 @@
 	<section id="projects" class="projects center-x">
 		<div class="projects-list">
 			{#each sortedFolks as folk}
-				<a class="portfolio-item" href={folk.data.page} target="_blank">
+				<a class="portfolio-item" href={folk.data.page} target="_blank" aria-label="Visit {folk.data.name}'s page">
 					<div
 						class="background-image"
 						style="background-image: url({folk.data.image});"
+						alt="{folk.data.name} - {folk.data.type}"
 					></div>
 					<div class="content">
 						<div class="text-container">
