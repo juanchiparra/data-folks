@@ -3,7 +3,7 @@ export const folks = [
 	{ id: 2, data: { name: 'Adrián Blanco', page: 'https://adrianblancoramos.com/', type: 'maps', image: './images/adrian-blanco.webp' } },
 	{ id: 3, data: { name: 'Aileen Clarke', page: 'https://aileenclarke.github.io/', type: 'maps', image: './images/aileen-clarke.webp' } },
 	{ id: 4, data: { name: 'Alba Martín', page: 'https://albamart.in/', type: 'interactive', image: './images/alba-martin.webp' } },
-	{ id: 5, data: { name: 'Alberto Cairo', page: 'https://www.albertocairo.com/', type: 'mastermind', image: './images/alberto-cairo.jpg' } },
+	{ id: 5, data: { name: 'Alberto Cairo', page: 'https://www.albertocairo.com/', type: 'mastermind', image: './images/alberto-cairo.webp' } },
 	{ id: 6, data: { name: 'Alessia Musìo', page: 'https://alessiamusio.com/', type: 'designer', image: './images/alessia-musio.webp' } },
 	{ id: 7, data: { name: 'Alli Torban', page: 'https://www.allitorban.com/', type: 'mastermind', image: './images/alli-torban.webp' } },
 	{ id: 8, data: { name: 'Alvin Chang', page: 'https://alvinschang.com/', type: 'interactive', image: './images/alvin-chang.webp' } },
