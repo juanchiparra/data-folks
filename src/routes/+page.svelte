@@ -1,6 +1,7 @@
 <script>
 	import { folks } from "./folks.js";
 	import { writable } from "svelte/store";
+	import { onMount } from "svelte";
 
 	export let filteredFolks = [];
 
@@ -18,6 +19,29 @@
 	$: sortedFolks = filteredFolks
 		.slice()
 		.sort((a, b) => a.data.name.localeCompare(b.data.name));
+
+	let currentLetter = writable("?");
+
+	onMount(() => {
+		const observer = new IntersectionObserver(
+			(entries) => {
+				entries.forEach((entry) => {
+					if (entry.isIntersecting) {
+						const name =
+							entry.target.querySelector(".name").textContent;
+						currentLetter.set(name.charAt(0).toUpperCase());
+					}
+				});
+			},
+			{ threshold: 0.5 },
+		);
+
+		document.querySelectorAll(".portfolio-item").forEach((item) => {
+			observer.observe(item);
+		});
+
+		return () => observer.disconnect();
+	});
 </script>
 
 <main class="container">
@@ -46,23 +70,34 @@
 	</section>
 	<section id="category-explanation" class="explanation">
 		<p class="disclaimer">
-			The fields were created under my personal opinion. It doesn't mean that this folk only knows about that subject, it's just that among everything he knows, this particular one has helped me.
+			The fields were created under my personal opinion. It doesn't mean
+			that this folk only knows about that subject, it's just that among
+			everything he knows, this particular one has helped me.
 		</p>
 		<p>You can select a field to filter:</p>
 		<ul>
 			<li><strong>All:</strong> All folks in one place</li>
 			<li>
-				<strong>Interactive:</strong> Those who usually do interactive visualizations, either with D3, Svelte...
+				<strong>Interactive:</strong> Those who usually do interactive visualizations,
+				either with D3, Svelte...
 			</li>
 			<li>
-				<strong>Designer</strong> Those good at designing visualizations with programs such as Illustrator or Photoshop, or who tend to make static visualizations
+				<strong>Designer</strong> Those good at designing visualizations
+				with programs such as Illustrator or Photoshop, or who tend to make
+				static visualizations
 			</li>
 			<li>
-				<strong>Mastermind:</strong> Those from whom I have been able to learn over the years, either by a book, a course, or even their publications on social media or their blog
+				<strong>Mastermind:</strong> Those from whom I have been able to
+				learn over the years, either by a book, a course, or even their publications
+				on social media or their blog
 			</li>
-			<li><strong>Maps:</strong>Those who make maps in a thousand and one possible ways</li>
 			<li>
-				<strong>Hands-on:</strong> Those who can create visualizations with pen and paper
+				<strong>Maps:</strong>Those who make maps in a thousand and one
+				possible ways
+			</li>
+			<li>
+				<strong>Hands-on:</strong> Those who can create visualizations with
+				pen and paper
 			</li>
 		</ul>
 	</section>
@@ -100,7 +135,12 @@
 	<section id="projects" class="projects center-x">
 		<div class="projects-list">
 			{#each sortedFolks as folk}
-				<a class="portfolio-item" href={folk.data.page} target="_blank" aria-label="Visit {folk.data.name}'s page">
+				<a
+					class="portfolio-item"
+					href={folk.data.page}
+					target="_blank"
+					aria-label="Visit {folk.data.name}'s page"
+				>
 					<div
 						class="background-image"
 						style="background-image: url({folk.data.image});"
@@ -123,6 +163,9 @@
 			<div class="triangle-up"></div>
 		</button>
 	</section>
+	<div class="current-letter">
+		{$currentLetter}
+	</div>
 </main>
 
 <style>
@@ -140,10 +183,9 @@
 		-moz-osx-font-smoothing: grayscale;
 	}
 
-    .container {
-        padding: 0 1rem; /* Añade padding a los lados */
-    }
-
+	.container {
+		padding: 0 1rem;
+	}
 
 	h1 {
 		text-align: center;
@@ -211,12 +253,12 @@
 	}
 
 	.disclaimer {
-        text-align: center;
-        font-weight: normal;
-        color: #ff825c;
-        margin-top: 1em;
-    }
-	
+		text-align: center;
+		font-weight: normal;
+		color: #ff825c;
+		margin-top: 1em;
+	}
+
 	.projects-list {
 		display: grid;
 		grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -360,6 +402,19 @@
 		border-bottom-color: var(--black);
 	}
 
+	.current-letter {
+		position: fixed;
+		top: 10px;
+		right: 20px;
+		background-color: var(--black);
+		color: var(--white);
+		padding: 10px;
+		border-radius: 5px;
+		font-size: 1.5rem;
+		box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+		z-index: 4;
+	}
+
 	@media (max-width: 768px) {
 		.projects-list {
 			grid-template-columns: 1fr;
@@ -367,6 +422,11 @@
 
 		.scroll-to-top {
 			right: 50%;
+			transform: translateX(50%);
+		}
+
+		.current-letter {
+			display: none;
 		}
 	}
 
@@ -388,6 +448,15 @@
 
 		.portfolio-item {
 			width: 100%;
+		}
+
+		.scroll-to-top {
+			left: 50%;
+			transform: translateX(-50%);
+		}
+
+		.current-letter {
+			display: none;
 		}
 	}
 </style>
