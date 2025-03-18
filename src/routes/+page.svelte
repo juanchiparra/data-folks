@@ -128,10 +128,6 @@
 			on:click={() => setFilter("hands")}>Hands-on</button
 		>
 	</div>
-
-	<section id="projects" class="projects center">
-		<a href="projects" aria-label="Projects"></a>
-	</section>
 	<section id="projects" class="projects center-x">
 		<div class="projects-list">
 			{#each sortedFolks as folk}
