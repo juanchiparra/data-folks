@@ -51,6 +51,7 @@ The fields were created under my personal opinion. It doesn't mean that this fol
 | Gabrielle Merite         | https://www.gabriellemerite.com/                                                                                              | Mastermind  |
 | Gemma Busquets           | https://www.gemmabusquets.com/                                                                                                | Mastermind  |
 | Giorgia Lupi             | https://giorgialupi.com/                                                                                                      | Mastermind  |
+| Giulia Manganelli	       | https://www.giuliamanganelli.com/                                                                                             | Designer    |
 | Gurman Bhatia            | https://gurmanbhatia.com/                                                                                                     | Interactive |
 | Han Huang                | https://jashcny.github.io/                                                                                                    | Interactive |
 | Harry Steven             | https://harryjstevens.com/                                                                                                    | Mastermind  |
@@ -113,6 +114,7 @@ The fields were created under my personal opinion. It doesn't mean that this fol
 | Sarah Fawson             | https://thedatasays.org/                                                                                                      | Designer    |
 | Sarah Fossheim           | https://fossheim.io/                                                                                                          | Mastermind  |
 | Sarah Kay Miller         | https://sarahkaymiller.com/                                                                                                   | Designer    |
+| Shelly Chang	           | https://shellyscheng.github.io/                                                                                               | Interactive |
 | Shirley Wu               | https://shirleywu.studio/                                                                                                     | Interactive |
 | Simon Scarr              | https://www.simonscarr.com/                                                                                                   | Designer    |
 | Simone Betito            | https://www.simonebetito.com/                                                                                                 | Interactive |
