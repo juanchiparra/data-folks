@@ -115,6 +115,8 @@ export const folks = [
 	{ id: 125, data: { name: 'Fernando Becerra', page: 'https://www.fernandobecerra.com/', type: 'interactive', image: images['/src/lib/images/fernando-becerra.webp'].default } },
 	{ id: 126, data: { name: 'Harry Stevens', page: 'https://harryjstevens.com/', type: 'mastermind', image: images['/src/lib/images/harry-stevens.webp'].default } },
 	{ id: 127, data: { name: 'Nami Sumida', page: 'https://namisumida.github.io/', type: 'interactive', image: images['/src/lib/images/nami-sumida.webp'].default } },
+	{ id: 128, data: { name: 'Giulia Manganelli', page: 'https://www.giuliamanganelli.com/', type: 'designer', image: images['/src/lib/images/giulia-manganelli.webp'].default } },
+	{ id: 129, data: { name: 'Shelly Cheng', page: 'https://shellyscheng.github.io/', type: 'interactive', image: images['/src/lib/images/shelly-cheng.webp'].default } },
 ].map(folk => {
     const path = folk.data.image;
     return {
