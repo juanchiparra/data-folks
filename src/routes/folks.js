@@ -117,13 +117,14 @@ export const folks = [
 	{ id: 127, data: { name: 'Nami Sumida', page: 'https://namisumida.github.io/', type: 'interactive', image: images['/src/lib/images/nami-sumida.webp'].default } },
 	{ id: 128, data: { name: 'Giulia Manganelli', page: 'https://www.giuliamanganelli.com/', type: 'designer', image: images['/src/lib/images/giulia-manganelli.webp'].default } },
 	{ id: 129, data: { name: 'Shelly Cheng', page: 'https://shellyscheng.github.io/', type: 'interactive', image: images['/src/lib/images/shelly-cheng.webp'].default } },
+	{ id: 130, data: { name: 'Vinicius Sueiro', page: 'https://vsueiro.com/', type: 'interactive', image: images['/src/lib/images/vinicius-sueiro.webp'].default } },
 ].map(folk => {
-    const path = folk.data.image;
-    return {
-        ...folk,
-        data: {
-            ...folk.data,
-            image: images[path]?.default || path
-        }
-    };
+	const path = folk.data.image;
+	return {
+		...folk,
+		data: {
+			...folk.data,
+			image: images[path]?.default || path
+		}
+	};
 });
