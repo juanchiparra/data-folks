@@ -124,6 +124,7 @@ The fields were created under my personal opinion. It doesn't mean that this fol
 | Taylor Maggiacomo        | https://www.taylormaggiacomo.com/                                                                                             | Designer    |
 | Thomas Oide              | https://thomasoide.github.io/                                                                                                 | Interactive |
 | Tiziana Alocci           | https://www.tizianaalocci.com/                                                                                                | Designer    |
+| Vinicius Sueiro          | https://vsueiro.com/                                                                                                          | Interactive |
 | Weiyi Cai                | https://www.caiweiyi.com/                                                                                                     | Maps        |
 | Wendy Shijia             | https://wendyshijia.notion.site/                                                                                              | Maps        |
 | Will Chase               | https://www.williamrchase.com/                                                                                                | Interactive |
