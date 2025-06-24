@@ -66,6 +66,7 @@ The fields were created under my personal opinion. It doesn't mean that this fol
 | Joel Eastwood            | http://joeleastwood.ca/                                                                                                       | Interactive |
 | Joey Lee                 | https://jk-lee.com/                                                                                                           | Maps        |
 | Jonathan Corum           | https://13pt.com/corum/                                                                                                       | Maps        |
+| Jorge Martinez Rey       | https://datavizcowboy.com/                                                                                                    | Designer    |
 | Juan Pablo Bravo         | https://www.linkedin.com/in/juanpablobravocl/                                                                                 | Designer    |
 | Judit Bekker             | https://www.juditbekker.com/                                                                                                  | Interactive |
 | Kate Snow                | https://katesnowdesign.com/                                                                                                   | Designer    |
@@ -109,6 +110,7 @@ The fields were created under my personal opinion. It doesn't mean that this fol
 | Prinz Magtulis           | https://www.prinzmagtulis.com/                                                                                                | Interactive |
 | Rachael Dottle           | https://rachaeldottle.com/                                                                                                    | Interactive |
 | Rahul Mukherjee          | https://www.rmukherjee.com/                                                                                                   | Interactive |
+| Rodrigo Menegat          | https://meneg.at/                                                                                                             | Interactive |
 | Rosie Ettenheim          | https://www.rosieettenheim.com/                                                                                               | Designer    |
 | Ryan Best                | https://ryanabest.com/                                                                                                        | Interactive |
 | Sarah Fawson             | https://thedatasays.org/                                                                                                      | Designer    |
