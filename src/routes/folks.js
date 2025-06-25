@@ -118,6 +118,8 @@ export const folks = [
 	{ id: 128, data: { name: 'Giulia Manganelli', page: 'https://www.giuliamanganelli.com/', type: 'designer', image: images['/src/lib/images/giulia-manganelli.webp'].default } },
 	{ id: 129, data: { name: 'Shelly Cheng', page: 'https://shellyscheng.github.io/', type: 'interactive', image: images['/src/lib/images/shelly-cheng.webp'].default } },
 	{ id: 130, data: { name: 'Vinicius Sueiro', page: 'https://vsueiro.com/', type: 'interactive', image: images['/src/lib/images/vinicius-sueiro.webp'].default } },
+	{ id: 131, data: { name: 'Jorge Martinez Rey', page: 'https://datavizcowboy.com/', type: 'designer', image: images['/src/lib/images/jorge-martinez-rey.webp'].default } },
+	{ id: 132, data: { name: 'Rodrigo Menegat', page: 'https://meneg.at/', type: 'interactive', image: images['/src/lib/images/rodrigo-menegat.webp'].default } },
 ].map(folk => {
 	const path = folk.data.image;
 	return {
