@@ -36,7 +36,6 @@ The fields were created under my personal opinion. It doesn't mean that this fol
 | Connor Rothschild        | https://www.connorrothschild.com/                                                                                             | Mastermind  |
 | Curran Kelleher          | https://github.com/curran                                                                                                     | Mastermind  |
 | Daniel Gonzalez Cappa    | https://gcappa.com/                                                                                                           | Designer    |
-| Dea Bankova              | https://deabankova.com/                                                                                                       | Interactive |
 | Diana Estefanía Rubio    | https://www.dianaestefaniarubio.com/                                                                                          | Mastermind  |
 | Diana Yukari             | https://dianayukari.com/                                                                                                      | Designer    |
 | Edit Gyenge              | https://editgyenge.com/                                                                                                       | Designer    |
@@ -56,14 +55,12 @@ The fields were created under my personal opinion. It doesn't mean that this fol
 | Han Huang                | https://jashcny.github.io/                                                                                                    | Interactive |
 | Harry Steven             | https://harryjstevens.com/                                                                                                    | Mastermind  |
 | Ihar Yanouski            | https://yanouski.com/                                                                                                         | Interactive |
-| Ilia Blinderman          | https://iliablinderman.com/                                                                                                   | Interactive |
 | Irene de la Torre Arenas | https://irenedelatorrearenas.wordpress.com/                                                                                   | Interactive |
 | Jacopo Poletto           | https://jacopopoletto.com/                                                                                                    | Interactive |
 | Jan Diehm                | https://jandiehmdesigns.com/                                                                                                  | Interactive |
 | Jared Wilber             | https://www.jwilber.me/                                                                                                       | Interactive |
 | Jeremy C.F. Lin          | https://jeremycflin.github.io/                                                                                                | Maps        |
 | Jin Wu                   | https://jinnwuu.github.io/portfolio/                                                                                          | Maps        |
-| Joel Eastwood            | http://joeleastwood.ca/                                                                                                       | Interactive |
 | Joey Lee                 | https://jk-lee.com/                                                                                                           | Maps        |
 | Jonathan Corum           | https://13pt.com/corum/                                                                                                       | Maps        |
 | Jorge Martinez Rey       | https://datavizcowboy.com/                                                                                                    | Designer    |
@@ -102,10 +99,8 @@ The fields were created under my personal opinion. It doesn't mean that this fol
 | Nadja Popovich           | https://nadjapopovich.com/                                                                                                    | Maps        |
 | Nami Sumida              | https://namisumida.github.io/                                                                                                 | Interactive |
 | Nathan Yau               | https://flowingdata.com/                                                                                                      | Mastermind  |
-| Nicholas Felton          | https://feltron.com/                                                                                                          | Designer    |
 | Nikita Rokotyan          | https://rokotyan.com/                                                                                                         | Interactive |
-| Pablo Robles             | https://www.josepablorobles.com/                                                                                              | Maps        |
-| Paul Murray              | https://paulmurray.io/                                                                                                        | Interactive |
+| Pablo Robles             | http://www.josepablorobles.com/                                                                                               | Maps        |
 | Peter Cook               | https://www.peterrcook.com/                                                                                                   | Interactive |
 | Prinz Magtulis           | https://www.prinzmagtulis.com/                                                                                                | Interactive |
 | Rachael Dottle           | https://rachaeldottle.com/                                                                                                    | Interactive |
@@ -137,5 +132,3 @@ The fields were created under my personal opinion. It doesn't mean that this fol
 
 ## Contributions
 Your contributions are welcome. You can contribute by updating the list, either to add yourself or others. For more information, visit [CONTRIBUTING.md](CONTRIBUTING.md).
-
-
