@@ -120,6 +120,7 @@ export const folks = [
 	{ id: 130, data: { name: 'Vinicius Sueiro', page: 'https://vsueiro.com/', type: 'interactive', image: images['/src/lib/images/vinicius-sueiro.webp'].default } },
 	{ id: 131, data: { name: 'Jorge Martinez Rey', page: 'https://datavizcowboy.com/', type: 'designer', image: images['/src/lib/images/jorge-martinez-rey.webp'].default } },
 	{ id: 132, data: { name: 'Rodrigo Menegat', page: 'https://meneg.at/', type: 'interactive', image: images['/src/lib/images/rodrigo-menegat.webp'].default } },
+	{ id: 133, data: { name: 'Mariana Villamizar', page: 'https://marianaviro.myportfolio.com/work', type: 'interactive', image: images['/src/lib/images/mariana-villamizar.webp'].default } },
 ].map(folk => {
 	const path = folk.data.image;
 	return {
