@@ -80,6 +80,7 @@ The fields were created under my personal opinion. It doesn't mean that this fol
 | Lisa Hornung             | https://inside-numbers.com/                                                                                                   | Designer    |
 | Marcelo Duhalde          | https://www.behance.net/marcelodc                                                                                             | Designer    |
 | Marco Hernández          | https://mhinfographics.com/                                                                                                   | Mastermind  |
+| Mariana Villamizar       | https://marianaviro.myportfolio.com/                                                                                          | Interactive |
 | Mariano Zafra            | http://www.marianozafra.com/                                                                                                  | Maps        |
 | Marie Patino             | https://mariepatino.com/                                                                                                      | Interactive |
 | Marta Sierra             | https://www.martaviz.nl/                                                                                                      | Hand-on     |
