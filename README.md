@@ -26,6 +26,7 @@ The fields were created under my personal opinion. It doesn't mean that this fol
 | Amelia Wattenberger      | https://wattenberger.com/                                                                                                     | Mastermind  |
 | Amy Cesal                | https://www.amycesal.com/                                                                                                     | Mastermind  |
 | Andrea Giambelli         | https://www.andreagiambelli.com/                                                                                              | Interactive |
+| Ani Matevosian           | https://www.animatevosian.com/                                                                                                | Interactive |
 | Arjun Kakkar             | https://arjunkakkkar.mmm.page/                                                                                                | Interactive |
 | Ashley Cai               | https://www.ashleycai.com/                                                                                                    | Interactive |
 | Ben Tanen                | https://ben-tanen.com/                                                                                                        | Mastermind  |
