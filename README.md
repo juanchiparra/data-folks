@@ -120,6 +120,7 @@ The fields were created under my personal opinion. It doesn't mean that this fol
 | Simran Parwani           | https://simranparwani.github.io/                                                                                              | Interactive |
 | Stefan Pullen            | https://www.stefanpullen.com/                                                                                                 | Designer    |
 | Stefania Guerra          | https://www.behance.net/stegue88e47f                                                                                          | Designer    |
+| Stephanie Wu             | https://www.stephdesigns.net/                                                                                                 | Interactive |
 | Taylor Maggiacomo        | https://www.taylormaggiacomo.com/                                                                                             | Designer    |
 | Thomas Oide              | https://thomasoide.github.io/                                                                                                 | Interactive |
 | Tiziana Alocci           | https://www.tizianaalocci.com/                                                                                                | Designer    |
