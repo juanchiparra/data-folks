@@ -14,41 +14,8 @@
 	<meta property="og:url" content="https://juanchiparra.github.io/data-folks/" />
 	%sveltekit.head%
 </head>
-<style>
-	body {
-		overflow-y: scroll;
-		width: 100%;
-		max-width: 1280px;
-		margin: 0 auto;
-		padding: 0;
-		min-height: 100vh;
-		display: flex;
-		flex-direction: column;
-		overflow-x: hidden;
-	}
-
-	.external {
-		color: var(--white);
-		text-decoration: underline;
-		text-decoration-style: dotted;
-		text-decoration-thickness: 1px;
-	}
-
-	.external:hover {
-		text-decoration: none;
-	}
-
-	footer {
-		text-align: center;
-		margin: 40px 0;
-		padding: 20px;
-		border-radius: 10px;
-	}
-
-	footer p {
-		font-size: 0.79rem
-	}
-</style>
+<link rel="stylesheet" href="%sveltekit.assets%/style/variables.css" />
+<link rel="stylesheet" href="%sveltekit.assets%/style/global.css" />
 
 <body data-sveltekit-preload-data="hover">
 	<div style="display: contents">%sveltekit.body%</div>
