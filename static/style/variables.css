@@ -1,0 +1,10 @@
+:root {
+    --black: #141414;
+    --white: #f5f5f5;
+    --color-border: #333;
+    --color-border-strong: #666;
+    --color-text-muted: #cccccc;
+    --color-text-dim: #888;
+    --space-1: 0.28rem;
+    --space-2: 0.9rem;
+}
