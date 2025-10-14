@@ -1060,6 +1060,24 @@ export const folks = [
             image: images["/src/lib/images/stephanie-wu.webp"].default,
         },
     },
+    {
+        id: 136,
+        data: {
+            name: "Hesham Eissa",
+            page: "https://heshameissa.com/",
+            type: "interactive",
+            image: images["/src/lib/images/hesham-eissa.webp"].default,
+        },
+    },
+    {
+        id: 137,
+        data: {
+            name: "Amanda Shendruk",
+            page: "https://ashendruk.com/",
+            type: "designer",
+            image: images["/src/lib/images/amanda-shendruk.webp"].default,
+        },
+    },
 ].map((folk) => {
     const path = folk.data.image;
     return {
