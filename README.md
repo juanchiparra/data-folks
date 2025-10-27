@@ -54,6 +54,7 @@ The fields were created under my personal opinion. It doesn't mean that this fol
 | Giulia Manganelli	       | https://www.giuliamanganelli.com/                                                                                             | Designer    |
 | Gurman Bhatia            | https://gurmanbhatia.com/                                                                                                     | Interactive |
 | Han Huang                | https://jashcny.github.io/                                                                                                    | Interactive |
+| HaoChe Hung              | https://haochehung.com/                                                                                                       | Designer    |
 | Harry Steven             | https://harryjstevens.com/                                                                                                    | Mastermind  |
 | Ihar Yanouski            | https://yanouski.com/                                                                                                         | Interactive |
 | Irene de la Torre Arenas | https://irenedelatorrearenas.wordpress.com/                                                                                   | Interactive |
@@ -96,6 +97,7 @@ The fields were created under my personal opinion. It doesn't mean that this fol
 | Michelle McGhee          | [https://mmcghee.notion.site/Michelle-McGhee/](https://mmcghee.notion.site/Michelle-McGhee-b4e0346f98fd4cb988d025173c1e94a7/) | Interactive |
 | Mira Rojanasakul         | https://mirarojanasakul.com/                                                                                                  | Maps        |
 | Mohamad Waked            | https://alhadaqa.com/                                                                                                         | Designer    |
+| Monsicha Srisuantang     | https://monsicha.info/work                                                                                                    | Interactive |
 | Moritz Stefaner          | https://truth-and-beauty.net/                                                                                                 | Interactive |
 | Nadieh Bremer            | https://www.visualcinnamon.com/                                                                                               | Mastermind  |
 | Nadja Popovich           | https://nadjapopovich.com/                                                                                                    | Maps        |
