@@ -19,6 +19,7 @@ jobs:
               uses: lycheeverse/lychee-action@v2
               with:
                   fail: false
+                  args: --scheme http,https,mailto --exclude "%sveltekit.assets%"
 
             - name: Create Issue From File
               if: steps.lychee.outputs.exit_code != 0
