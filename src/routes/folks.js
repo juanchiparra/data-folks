@@ -1078,6 +1078,24 @@ export const folks = [
             image: images["/src/lib/images/amanda-shendruk.webp"].default,
         },
     },
+    {
+        id: 138,
+        data: {
+            name: "Monsicha Srisuantang",
+            page: "https://monsicha.info/",
+            type: "designer",
+            image: images["/src/lib/images/monsicha-srisuantang.webp"].default,
+        },
+    },
+    {
+        id: 139,
+        data: {
+            name: "HaoChe Hung",
+            page: "https://haochehung.com/",
+            type: "designer",
+            image: images["/src/lib/images/haoche-hung.webp"].default,
+        },
+    },
 ].map((folk) => {
     const path = folk.data.image;
     return {
