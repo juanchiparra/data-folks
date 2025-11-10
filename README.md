@@ -32,6 +32,8 @@ The fields were created under my personal opinion. It doesn't mean that this fol
 | Ben Tanen                | https://ben-tanen.com/                                                                                                        | Mastermind  |
 | Brody Smith              | https://brody.fyi/                                                                                                            | Maps        |
 | Cam Rodriguez            | https://camrodriguez.carrd.co/                                                                                                | Maps        |
+| Carl Churchill           | https://churchillgeo.com/                                                                                                     | Maps        |
+| Catalina Hildebrandt     | https://www.catalinahildebrandt.com/                                                                                          | Designer    |
 | Cédric Sam               | https://cedric.sam.name/                                                                                                      | Maps        |
 | Chris Canipe             | https://chriscanipe.com/                                                                                                      | Interactive |
 | Connor Rothschild        | https://www.connorrothschild.com/                                                                                             | Mastermind  |
@@ -68,6 +70,7 @@ The fields were created under my personal opinion. It doesn't mean that this fol
 | Jorge Martinez Rey       | https://datavizcowboy.com/                                                                                                    | Designer    |
 | Juan Pablo Bravo         | https://www.linkedin.com/in/juanpablobravocl/                                                                                 | Designer    |
 | Judit Bekker             | https://www.juditbekker.com/                                                                                                  | Interactive |
+| Julian Hoffmann Anton    | https://www.julian-hoffmann-anton.com/                                                                                        | Maps        |
 | Kate Snow                | https://katesnowdesign.com/                                                                                                   | Designer    |
 | Katie Marriner           | https://katiemarriner.com/                                                                                                    | Interactive |
 | Kristin Baumann          | https://www.kristin-baumann.com/                                                                                              | Interactive |
