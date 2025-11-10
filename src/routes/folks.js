@@ -1096,6 +1096,33 @@ export const folks = [
             image: images["/src/lib/images/haoche-hung.webp"].default,
         },
     },
+    {
+        id: 140,
+        data: {
+            name: "Julian Hoffmann Anton",
+            page: "https://www.julian-hoffmann-anton.com/",
+            type: "maps",
+            image: images["/src/lib/images/julian-hoffmann-anton.webp"].default,
+        },
+    },
+    {
+        id: 141,
+        data: {
+            name: "Catalina Hildebrandt",
+            page: "https://www.catalinahildebrandt.com/",
+            type: "designer",
+            image: images["/src/lib/images/catalina-hildebrandt.webp"].default,
+        },
+    },
+    {
+        id: 142,
+        data: {
+            name: "Carl Churchill",
+            page: "https://churchillgeo.com/",
+            type: "maps",
+            image: images["/src/lib/images/carl-churchill.webp"].default,
+        },
+    },
 ].map((folk) => {
     const path = folk.data.image;
     return {
