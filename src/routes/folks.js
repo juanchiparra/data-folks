@@ -1123,6 +1123,33 @@ export const folks = [
             image: images["/src/lib/images/carl-churchill.webp"].default,
         },
     },
+    {
+        id: 143,
+        data: {
+            name: "Thanh Nguyen",
+            page: "https://www.thanhxthu.com/",
+            type: "designer",
+            image: images["/src/lib/images/thanh-nguyen.webp"].default,
+        },
+    },
+    {
+        id: 144,
+        data: {
+            name: "Denise Lu",
+            page: "https://www.deniselu.com/",
+            type: "interactive",
+            image: images["/src/lib/images/denise-lu.webp"].default,
+        },
+    },
+    {
+        id: 145,
+        data: {
+            name: "Nina Krug",
+            page: "https://www.ninakrug.de/",
+            type: "designer",
+            image: images["/src/lib/images/nina-krug.webp"].default,
+        },
+    },
 ].map((folk) => {
     const path = folk.data.image;
     return {
