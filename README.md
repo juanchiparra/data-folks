@@ -39,6 +39,7 @@ The fields were created under my personal opinion. It doesn't mean that this fol
 | Connor Rothschild        | https://www.connorrothschild.com/                                                                                             | Mastermind  |
 | Curran Kelleher          | https://github.com/curran                                                                                                     | Mastermind  |
 | Daniel Gonzalez Cappa    | https://gcappa.com/                                                                                                           | Designer    |
+| Denise Lu                | https://www.deniselu.com/                                                                                                     | Interactive | 
 | Diana Estefanía Rubio    | https://www.dianaestefaniarubio.com/                                                                                          | Mastermind  |
 | Diana Yukari             | https://dianayukari.com/                                                                                                      | Designer    |
 | Edit Gyenge              | https://editgyenge.com/                                                                                                       | Designer    |
@@ -107,6 +108,7 @@ The fields were created under my personal opinion. It doesn't mean that this fol
 | Nami Sumida              | https://namisumida.github.io/                                                                                                 | Interactive |
 | Nathan Yau               | https://flowingdata.com/                                                                                                      | Mastermind  |
 | Nikita Rokotyan          | https://rokotyan.com/                                                                                                         | Interactive |
+| Nina Krug                | https://www.ninakrug.de/                                                                                                      | Designer    |
 | Pablo Robles             | http://www.josepablorobles.com/                                                                                               | Maps        |
 | Peter Cook               | https://www.peterrcook.com/                                                                                                   | Interactive |
 | Prinz Magtulis           | https://www.prinzmagtulis.com/                                                                                                | Interactive |
@@ -127,6 +129,7 @@ The fields were created under my personal opinion. It doesn't mean that this fol
 | Stefania Guerra          | https://www.behance.net/stegue88e47f                                                                                          | Designer    |
 | Stephanie Wu             | https://www.stephdesigns.net/                                                                                                 | Interactive |
 | Taylor Maggiacomo        | https://www.taylormaggiacomo.com/                                                                                             | Designer    |
+| Thanh Nguyen             | https://www.thanhxthu.com/                                                                                                    | Designer    |
 | Thomas Oide              | https://thomasoide.github.io/                                                                                                 | Interactive |
 | Tiziana Alocci           | https://www.tizianaalocci.com/                                                                                                | Designer    |
 | Vinicius Sueiro          | https://vsueiro.com/                                                                                                          | Interactive |
