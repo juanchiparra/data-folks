@@ -1153,10 +1153,10 @@ export const folks = [
     {
         id: 146,
         data: {
-            name: "Italo Doliva",
+            name: "Italo de Oliveira",
             page: "https://italodoliva.com.br/",
             type: "designer",
-            image: images["/src/lib/images/italo-doliva.webp"].default,
+            image: images["/src/lib/images/italo-de-oliveira.webp"].default,
         },
     },
     {
