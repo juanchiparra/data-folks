@@ -61,6 +61,7 @@ The fields were created under my personal opinion. It doesn't mean that this fol
 | Harry Steven             | https://harryjstevens.com/                                                                                                    | Mastermind  |
 | Ihar Yanouski            | https://yanouski.com/                                                                                                         | Interactive |
 | Irene de la Torre Arenas | https://irenedelatorrearenas.wordpress.com/                                                                                   | Interactive |
+| Italo de Oliveira        | https://italodoliva.com.br/                                                                                                   | Designer    |
 | Jacopo Poletto           | https://jacopopoletto.com/                                                                                                    | Interactive |
 | Jan Diehm                | https://jandiehmdesigns.com/                                                                                                  | Interactive |
 | Jared Wilber             | https://www.jwilber.me/                                                                                                       | Interactive |
@@ -117,6 +118,7 @@ The fields were created under my personal opinion. It doesn't mean that this fol
 | Rodrigo Menegat          | https://meneg.at/                                                                                                             | Interactive |
 | Rosie Ettenheim          | https://www.rosieettenheim.com/                                                                                               | Designer    |
 | Ryan Best                | https://ryanabest.com/                                                                                                        | Interactive |
+| Sara I. Belled           | https://saraibelled.github.io/porfolio/                                                                                       | Interactive |
 | Sarah Fawson             | https://thedatasays.org/                                                                                                      | Designer    |
 | Sarah Fossheim           | https://fossheim.io/                                                                                                          | Mastermind  |
 | Sarah Kay Miller         | https://sarahkaymiller.com/                                                                                                   | Designer    |
