@@ -1150,6 +1150,24 @@ export const folks = [
             image: images["/src/lib/images/nina-krug.webp"].default,
         },
     },
+    {
+        id: 146,
+        data: {
+            name: "Italo Doliva",
+            page: "https://italodoliva.com.br/",
+            type: "designer",
+            image: images["/src/lib/images/italo-doliva.webp"].default,
+        },
+    },
+    {
+        id: 147,
+        data: {
+            name: "Sara I. Belled",
+            page: "https://saraibelled.github.io/porfolio/",
+            type: "interactive",
+            image: images["/src/lib/images/sara-i-belled.webp"].default,
+        },
+    },
 ].map((folk) => {
     const path = folk.data.image;
     return {
