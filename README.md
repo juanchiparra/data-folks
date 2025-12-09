@@ -22,7 +22,9 @@ The fields were created under my personal opinion. It doesn't mean that this fol
 | Alberto Cairo            | https://www.albertocairo.com/                                                                                                 | Mastermind  |
 | Alessia Musìo            | https://alessiamusio.com/                                                                                                     | Designer    |
 | Alli Torban              | https://www.allitorban.com/                                                                                                   | Mastermind  |
+| Álvaro Valiño            | https://www.alvarovalino.com/                                                                                                 | Designer    |
 | Alvin Chang              | https://alvinschang.com/                                                                                                      | Interactive |
+| Alyssa Fowers            | https://www.alyssafowers.com/portfolio                                                                                        | Designer    |
 | Amelia Wattenberger      | https://wattenberger.com/                                                                                                     | Mastermind  |
 | Amy Cesal                | https://www.amycesal.com/                                                                                                     | Mastermind  |
 | Andrea Giambelli         | https://www.andreagiambelli.com/                                                                                              | Interactive |
@@ -58,6 +60,7 @@ The fields were created under my personal opinion. It doesn't mean that this fol
 | Gurman Bhatia            | https://gurmanbhatia.com/                                                                                                     | Interactive |
 | Han Huang                | https://jashcny.github.io/                                                                                                    | Interactive |
 | HaoChe Hung              | https://haochehung.com/                                                                                                       | Designer    |
+| Harry Lewis-Irlam        | https://www.heligraphica.com/                                                                                                 | Interactive |
 | Harry Steven             | https://harryjstevens.com/                                                                                                    | Mastermind  |
 | Ihar Yanouski            | https://yanouski.com/                                                                                                         | Interactive |
 | Irene de la Torre Arenas | https://irenedelatorrearenas.wordpress.com/                                                                                   | Interactive |
@@ -141,6 +144,7 @@ The fields were created under my personal opinion. It doesn't mean that this fol
 | Wilson Andrews           | https://www.wilsonmarkandrews.com/                                                                                            | Interactive |
 | Yaryna Serkez            | https://yarynam.github.io/                                                                                                    | Interactive |
 | Yi Zhe Ang               | https://yizhe-ang.github.io/                                                                                                  | Interactive |
+| Youjin Shin              | https://www.youjin.info/                                                                                                      | Interactive |
 | Zach Levitt              | https://zachlevitt.com/                                                                                                       | Maps        |
 
 ## Contributions
