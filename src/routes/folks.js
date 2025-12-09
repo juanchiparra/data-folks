@@ -1168,6 +1168,42 @@ export const folks = [
             image: images["/src/lib/images/sara-i-belled.webp"].default,
         },
     },
+    {
+        id: 148,
+        data: {
+            name: "Harry Lewis-Irlam",
+            page: "https://www.heligraphica.com/",
+            type: "interactive",
+            image: images["/src/lib/images/harry-lewis-irlam.webp"].default,
+        },
+    },
+    {
+        id: 149,
+        data: {
+            name: "Youjin Shin",
+            page: "https://www.youjin.info/",
+            type: "interactive",
+            image: images["/src/lib/images/youjin-shin.webp"].default,
+        },
+    },
+    {
+        id: 150,
+        data: {
+            name: "Álvaro Valiño",
+            page: "https://www.alvarovalino.com/",
+            type: "designer",
+            image: images["/src/lib/images/alvaro-valino.webp"].default,
+        },
+    },
+    {
+        id: 151,
+        data: {
+            name: "Alyssa Fowers",
+            page: "https://www.alyssafowers.com/portfolio",
+            type: "designer",
+            image: images["/src/lib/images/alyssa-fowers.webp"].default,
+        },
+    },
 ].map((folk) => {
     const path = folk.data.image;
     return {
