@@ -31,6 +31,7 @@ The fields were created under my personal opinion. It doesn't mean that this fol
 | Ani Matevosian           | https://www.animatevosian.com/                                                                                                | Interactive |
 | Arjun Kakkar             | https://arjunkakkkar.mmm.page/                                                                                                | Interactive |
 | Ashley Cai               | https://www.ashleycai.com/                                                                                                    | Interactive |
+| Attila Bátorfy           | https://attilabatorfy.com/                                                                                                    | Maps        |
 | Ben Tanen                | https://ben-tanen.com/                                                                                                        | Mastermind  |
 | Brody Smith              | https://brody.fyi/                                                                                                            | Maps        |
 | Cam Rodriguez            | https://camrodriguez.carrd.co/                                                                                                | Maps        |
@@ -69,6 +70,7 @@ The fields were created under my personal opinion. It doesn't mean that this fol
 | Jan Diehm                | https://jandiehmdesigns.com/                                                                                                  | Interactive |
 | Jared Wilber             | https://www.jwilber.me/                                                                                                       | Interactive |
 | Jeremy C.F. Lin          | https://jeremycflin.github.io/                                                                                                | Maps        |
+| Jillian Vordick          | https://www.jillianvordick.com/                                                                                               | Interactive |
 | Jin Wu                   | https://jinnwuu.github.io/portfolio/                                                                                          | Maps        |
 | Joey Lee                 | https://jk-lee.com/                                                                                                           | Maps        |
 | Jonathan Corum           | https://13pt.com/corum/                                                                                                       | Maps        |
