@@ -1204,6 +1204,24 @@ export const folks = [
             image: images["/src/lib/images/alyssa-fowers.webp"].default,
         },
     },
+    {
+        id: 152,
+        data: {
+            name: "Jillian Vordick",
+            page: "https://www.jillianvordick.com/",
+            type: "interactive",
+            image: images["/src/lib/images/jillian-vordick.webp"].default,
+        },
+    },
+    {
+        id: 153,
+        data: {
+            name: "Attila Bátorfy",
+            page: "https://attilabatorfy.com/",
+            type: "maps",
+            image: images["/src/lib/images/attila-batorfy.webp"].default,
+        },
+    },
 ].map((folk) => {
     const path = folk.data.image;
     return {
