@@ -2,6 +2,6 @@ You can contribute by updating the list, either to add new records or edit exist
 
 **Pull request:** You can clone the repository, update the list, and generate a pull request.
 
-**Issue:** You can create an issue with the *Add me* template to request changes to the list. The template has instructions to follow.
+**Issue:** You can create an issue with the _Add me_ template to request changes to the list. The template has instructions to follow.
 
 **Direct message:** You can write me a private message or an [email](mailto:juanchiparra@gmail.com) requesting any change in the list.
