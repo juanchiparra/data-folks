@@ -1222,6 +1222,24 @@ export const folks = [
             image: images["/src/lib/images/attila-batorfy.webp"].default,
         },
     },
+    {
+        id: 154,
+        data: {
+            name: "Alberto Lucas López",
+            page: "https://lucasinfografia.com",
+            type: "designer",
+            image: images["/src/lib/images/alberto-lucas-lopez.webp"].default,
+        },
+    },
+    {
+        id: 155,
+        data: {
+            name: "Evan Applegate",
+            page: "https://evanapplegate.com/",
+            type: "maps",
+            image: images["/src/lib/images/evan-applegate.webp"].default,
+        },
+    },
 ].map((folk) => {
     const path = folk.data.image;
     return {
