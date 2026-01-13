@@ -19,7 +19,16 @@ jobs:
               uses: lycheeverse/lychee-action@v2
               with:
                   fail: false
-                  args: --scheme http,https,mailto --exclude "%sveltekit.assets%" --format markdown .
+                  format: markdown
+                  output: ./lychee/out.md
+                  args: >
+                      --scheme http,https,mailto
+                      --exclude '%sveltekit\\.assets%'
+                      --root-dir "$(pwd)"
+                      --no-progress
+                      './**/*.md'
+                      './**/*.html'
+                      './src/routes/folks.js'
 
             - name: Create Issue From File
               if: steps.lychee.outputs.exit_code != 0
