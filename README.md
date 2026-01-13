@@ -19,7 +19,8 @@ The fields were created under my personal opinion. It doesn't mean that this fol
 | Adrián Blanco            | https://adrianblancoramos.com/                                                                                                | Maps        |
 | Aileen Clarke            | https://aileenclarke.github.io/                                                                                               | Maps        |
 | Alba Martín              | https://albamart.in/                                                                                                          | Interactive |
-| Alberto Cairo            | https://www.albertocairo.com/                                                                                                 | Mastermind  |
+| Alberto Cairo            | https://albertocairo.com/                                                                                                     | Mastermind  |
+| Alberto Lucas López      | https://lucasinfografia.com/                                                                                                  | Designer    |
 | Alessia Musìo            | https://alessiamusio.com/                                                                                                     | Designer    |
 | Alli Torban              | https://www.allitorban.com/                                                                                                   | Mastermind  |
 | Álvaro Valiño            | https://www.alvarovalino.com/                                                                                                 | Designer    |
@@ -50,6 +51,7 @@ The fields were created under my personal opinion. It doesn't mean that this fol
 | Elena Mejía              | https://elenaml.com/                                                                                                          | Interactive |
 | Elliot Bentley           | https://elliotbentley.com/                                                                                                    | Interactive |
 | Ethan Singer             | https://ethansinger.me/                                                                                                       | Interactive |
+| Evan Applegate           | https://evanapplegate.com/                                                                                                    | Maps        |
 | Evelina Parrou           | https://www.behance.net/evelinaj                                                                                              | Designer    |
 | Federica Fragapane       | https://www.behance.net/FedericaFragapane                                                                                     | Mastermind  |
 | Fernando Becerra         | https://www.fernandobecerra.com/                                                                                              | Interactive |
