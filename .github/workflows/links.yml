@@ -22,8 +22,10 @@ jobs:
                   format: markdown
                   output: ./lychee/out.md
                   args: >
-                      --scheme http,https,mailto
-                      --exclude '%sveltekit\\.assets%'
+                      --scheme http
+                      --scheme https
+                      --scheme mailto
+                      --exclude '%sveltekit\.assets%'
                       --root-dir "$(pwd)"
                       --no-progress
                       './**/*.md'
