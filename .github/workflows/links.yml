@@ -31,6 +31,7 @@ jobs:
                       './**/*.md'
                       './**/*.html'
                       './src/routes/folks.js'
+                      --exclude-path 'README\.md$'
 
             - name: Create Issue From File
               if: steps.lychee.outputs.exit_code != 0
