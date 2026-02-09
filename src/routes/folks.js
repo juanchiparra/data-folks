@@ -1240,6 +1240,15 @@ export const folks = [
             image: images["/src/lib/images/evan-applegate.webp"].default,
         },
     },
+    {
+        id: 156,
+        data: {
+            name: "Chiqui Esteban",
+            page: "https://chiquiesteban.me/",
+            type: "interactive",
+            image: images["/src/lib/images/chiqui-esteban.webp"].default,
+        },
+    },
 ].map((folk) => {
     const path = folk.data.image;
     return {
