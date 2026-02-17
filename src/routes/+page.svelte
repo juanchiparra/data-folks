@@ -22,6 +22,25 @@
 
     let currentLetter = writable("?");
 
+    // JSON-LD schema for SEO
+    $: schemaData = {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        name: "Data Folks - Information Designers",
+        description: "A curated list of awesome information designers.",
+        itemListElement: sortedFolks.map((folk, index) => ({
+            "@type": "ListItem",
+            position: index + 1,
+            item: {
+                "@type": "Person",
+                name: folk.data.name,
+                url: folk.data.page,
+                jobTitle: "Information Designer",
+                knowsAbout: ["Data Visualization", folk.data.type],
+            },
+        })),
+    };
+
     onMount(() => {
         const observer = new IntersectionObserver(
             (entries) => {
@@ -45,6 +64,9 @@
 </script>
 
 <main class="container">
+    <script type="application/ld+json">
+        {@html JSON.stringify(schemaData)}
+    </script>
     <section class="header">
         <header>
             <h1>Data Folks</h1>
@@ -136,7 +158,10 @@
                     href={folk.data.page}
                     target="_blank"
                     aria-label="Visit {folk.data.name}'s page"
-                    on:click={() => window.fathom?.trackEvent(`portfolio click: ${folk.data.name}`)}
+                    on:click={() =>
+                        window.fathom?.trackEvent(
+                            `portfolio click: ${folk.data.name}`,
+                        )}
                 >
                     <div
                         class="background-image"
