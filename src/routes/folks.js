@@ -181,7 +181,6 @@ export const folks = [
             image: images["/src/lib/images/daniel-gonzalez-cappa.webp"].default,
         },
     },
-    // { id: 22, data: { name: 'Dea Bankova', page: 'https://deabankova.com/', type: 'interactive', image: images['/src/lib/images/dea-bankova.webp'].default } },
     {
         id: 23,
         data: {
@@ -326,7 +325,6 @@ export const folks = [
             image: images["/src/lib/images/ihar-yanouski.webp"].default,
         },
     },
-    // { id: 40, data: { name: 'Ilia Blinderman', page: 'https://iliablinderman.com/', type: 'interactive', image: images['/src/lib/images/ilia-blinderman.webp'].default } },
     {
         id: 41,
         data: {
@@ -382,7 +380,6 @@ export const folks = [
             image: images["/src/lib/images/jin-wu.webp"].default,
         },
     },
-    // { id: 47, data: { name: 'Joel Eastwood', page: 'http://joeleastwood.ca/', type: 'interactive', image: images['/src/lib/images/joel-eastwood.webp'].default } },
     {
         id: 48,
         data: {
@@ -698,7 +695,6 @@ export const folks = [
             image: images["/src/lib/images/nathan-yau.webp"].default,
         },
     },
-    // { id: 84, data: { name: 'Nicholas Felton', page: 'https://feltron.com/', type: 'designer', image: images['/src/lib/images/nicholas-felton.webp'].default } },
     {
         id: 85,
         data: {
@@ -717,7 +713,6 @@ export const folks = [
             image: images["/src/lib/images/pablo-robles.webp"].default,
         },
     },
-    // { id: 87, data: { name: 'Paul Murray', page: 'https://paulmurray.io/', type: 'interactive', image: images['/src/lib/images/paul-murray.webp'].default } },
     {
         id: 88,
         data: {
