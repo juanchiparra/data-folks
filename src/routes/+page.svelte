@@ -63,10 +63,11 @@
     });
 </script>
 
+<svelte:head>
+    {@html `<script type="application/ld+json">${JSON.stringify(schemaData)}</script>`}
+</svelte:head>
+
 <main class="container">
-    <script type="application/ld+json">
-        {@html JSON.stringify(schemaData)}
-    </script>
     <section class="header">
         <header>
             <h1>Data Folks</h1>
