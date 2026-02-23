@@ -1244,6 +1244,24 @@ export const folks = [
             image: images["/src/lib/images/chiqui-esteban.webp"].default,
         },
     },
+    {
+        id: 157,
+        data: {
+            name: "Carolina Correa Bull",
+            page: "https://carocorrea.com/",
+            type: "designer",
+            image: images["/src/lib/images/carolina-correa-bull.webp"].default,
+        },
+    },
+    {
+        id: 158,
+        data: {
+            name: "Luis Melgar",
+            page: "https://www.lmelgar.me/",
+            type: "interactive",
+            image: images["/src/lib/images/luis-melgar.webp"].default,
+        },
+    },
 ].map((folk) => {
     const path = folk.data.image;
     return {
