@@ -125,7 +125,9 @@ p {
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
     color: var(--white);
     overflow: hidden;
     text-decoration: none;
@@ -201,7 +203,10 @@ button {
     border-radius: 6px;
     font-size: 0.96em;
     cursor: pointer;
-    transition: border 0.2s, color 0.2s, background 0.2s;
+    transition:
+        border 0.2s,
+        color 0.2s,
+        background 0.2s;
 }
 
 button:hover {
@@ -230,7 +235,9 @@ button.active {
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: background-color 0.3s, transform 0.3s;
+    transition:
+        background-color 0.3s,
+        transform 0.3s;
 }
 
 .scroll-to-top:hover {
@@ -296,6 +303,32 @@ button.active {
 
     .portfolio-item {
         width: 100%;
+    }
+
+    .portfolio-item .content {
+        display: flex;
+        align-items: flex-end;
+        background: linear-gradient(
+            to top,
+            rgba(0, 0, 0, 0.8) 0%,
+            rgba(0, 0, 0, 0) 100%
+        );
+    }
+
+    .portfolio-item .text-container {
+        padding: 1rem;
+        width: 100%;
+        text-align: left;
+    }
+
+    .portfolio-item .name {
+        font-size: 1.2rem;
+        margin-bottom: 0.2rem;
+    }
+
+    .portfolio-item .type {
+        font-size: 0.9rem;
+        opacity: 0.9;
     }
 
     .scroll-to-top {
