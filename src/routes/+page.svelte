@@ -35,6 +35,7 @@
                 "@type": "Person",
                 name: folk.data.name,
                 url: folk.data.page,
+                image: `https://juanchiparra.github.io/data-folks${folk.data.image}`,
                 jobTitle: "Information Designer",
                 knowsAbout: ["Data Visualization", folk.data.type],
             },
@@ -64,6 +65,11 @@
 </script>
 
 <svelte:head>
+    <title>Data Folks - A Curated List of Information Designers</title>
+    <meta
+        name="description"
+        content="A curated collection of portfolios from information designers and data visualization practitioners to inspire you."
+    />
     {@html `<script type="application/ld+json">${JSON.stringify(schemaData)}</script>`}
 </svelte:head>
 
