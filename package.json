@@ -4,10 +4,11 @@
 	"version": "0.0.1",
 	"type": "module",
 	"scripts": {
-		"dev": "vite dev",
-		"build": "vite build",
+		"dev": "pnpm run sync-readme && vite dev",
+		"build": "pnpm run sync-readme && vite build",
 		"preview": "vite preview",
-		"deploy": "gh-pages -d build -t"
+		"deploy": "gh-pages -d build -t",
+		"sync-readme": "node scripts/sync-readme.js"
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-auto": "^3.0.0",
