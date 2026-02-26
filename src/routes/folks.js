@@ -1262,6 +1262,24 @@ export const folks = [
             image: images["/src/lib/images/luis-melgar.webp"].default,
         },
     },
+    {
+        id: 159,
+        data: {
+            name: "Szu Yu Chen",
+            page: "https://sabrinamochi.github.io/",
+            type: "interactive",
+            image: images["/src/lib/images/szu-yu-chen.webp"].default,
+        },
+    },
+    {
+        id: 160,
+        data: {
+            name: "Artur Galocha",
+            page: "https://arturgalocha.com/",
+            type: "interactive",
+            image: images["/src/lib/images/artur-galocha.webp"].default,
+        },
+    },
 ].map((folk) => {
     const path = folk.data.image;
     return {
