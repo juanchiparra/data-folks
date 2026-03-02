@@ -1,6 +1,25 @@
-import { images } from "./imports.js";
+import { images } from "./imports";
 
-export const folks = [
+export type Field =
+    | "interactive"
+    | "designer"
+    | "maps"
+    | "mastermind"
+    | "hands-on";
+
+export interface FolkData {
+    name: string;
+    page: string;
+    type: Field | string;
+    image: string;
+}
+
+export interface Folk {
+    id: number;
+    data: FolkData;
+}
+
+export const folks: Folk[] = [
     {
         id: 1,
         data: {
@@ -1280,7 +1299,7 @@ export const folks = [
             image: images["/src/lib/images/artur-galocha.webp"].default,
         },
     },
-].map((folk) => {
+].map((folk): Folk => {
     const path = folk.data.image;
     return {
         ...folk,

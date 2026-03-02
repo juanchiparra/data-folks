@@ -1,6 +1,6 @@
 import fs from "fs";
 
-const folksContent = fs.readFileSync("./src/routes/folks.js", "utf-8");
+const folksContent = fs.readFileSync("./src/routes/folks.ts", "utf-8");
 const regex =
     /name:\s*["']([^"']+)["'],\s*page:\s*["']([^"']+)["'],\s*type:\s*["']([^"']+)["']/g;
 
