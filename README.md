@@ -45,7 +45,7 @@ The fields were created under my personal opinion. It doesn't mean that this fol
 | Chiqui Esteban | https://chiquiesteban.me/ | Interactive |
 | Chris Canipe | https://chriscanipe.com/ | Interactive |
 | Connor Rothschild | https://www.connorrothschild.com/ | Mastermind |
-| Curran Kelleher | https://github.com/curran  | Mastermind |
+| Curran Kelleher | https://github.com/curran | Mastermind |
 | Daniel Gonzalez Cappa | https://gcappa.com/ | Designer |
 | Denise Lu | https://www.deniselu.com/ | Interactive |
 | Diana Estefanía Rubio | https://www.dianaestefaniarubio.com/ | Mastermind |
