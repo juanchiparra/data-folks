@@ -942,7 +942,7 @@ export const folks = [
         id: 123,
         data: {
             name: "Curran Kelleher",
-            page: "https://github.com/curran ",
+            page: "https://github.com/curran",
             type: "mastermind",
             image: images["/src/lib/images/curran-kelleher.webp"].default,
         },
