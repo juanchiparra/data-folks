@@ -1,18 +1,18 @@
-<script>
-    import { folks } from "./folks.js";
+<script lang="ts">
+    import { folks, type Folk, type Field } from "./folks";
     import { writable } from "svelte/store";
     import { onMount } from "svelte";
 
-    export let filteredFolks = [];
+    export let filteredFolks: Folk[] = [];
 
-    let filterType = writable("all");
+    let filterType = writable<Field | "all">("all");
 
     $: filteredFolks =
         $filterType === "all"
             ? folks
             : folks.filter((folk) => folk.data.type === $filterType);
 
-    function setFilter(type) {
+    function setFilter(type: Field | "all") {
         filterType.set(type);
     }
 

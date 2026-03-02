@@ -1,1 +1,0 @@
-export const images = import.meta.glob('$lib/images/*.webp', { eager: true })
