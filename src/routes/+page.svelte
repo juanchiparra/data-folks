@@ -74,9 +74,6 @@
 </svelte:head>
 
 <main class="container">
-    <script type="application/ld+json">
-        {@html JSON.stringify(schemaData)}
-    </script>
     <section class="header">
         <header>
             <h1>Data Folks</h1>
