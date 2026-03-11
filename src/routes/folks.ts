@@ -5,7 +5,7 @@ export type Field =
     | "designer"
     | "maps"
     | "mastermind"
-    | "hands-on";
+    | "hands";
 
 export interface FolkData {
     name: string;
