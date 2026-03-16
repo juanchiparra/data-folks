@@ -240,9 +240,24 @@ button.active {
         transform 0.3s;
 }
 
-.scroll-to-top:hover {
+@media (hover: hover) {
+    .scroll-to-top:hover {
+        background-color: var(--white);
+        transform: scale(1.1);
+    }
+
+    .scroll-to-top:hover .triangle-up {
+        border-bottom-color: var(--black);
+    }
+}
+
+.scroll-to-top:active {
     background-color: var(--white);
-    transform: scale(1.1);
+    transform: scale(0.95);
+}
+
+.scroll-to-top:active .triangle-up {
+    border-bottom-color: var(--black);
 }
 
 .triangle-up {
@@ -251,10 +266,6 @@ button.active {
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
     border-bottom: 15px solid var(--white);
-}
-
-.scroll-to-top:hover .triangle-up {
-    border-bottom-color: var(--black);
 }
 
 .current-letter {
@@ -276,8 +287,9 @@ button.active {
     }
 
     .scroll-to-top {
-        right: 50%;
-        transform: translateX(50%);
+        right: 0;
+        left: 0;
+        margin: 0 auto;
     }
 
     .current-letter {
@@ -332,8 +344,9 @@ button.active {
     }
 
     .scroll-to-top {
-        left: 50%;
-        transform: translateX(-50%);
+        right: 0;
+        left: 0;
+        margin: 0 auto;
     }
 
     .current-letter {
