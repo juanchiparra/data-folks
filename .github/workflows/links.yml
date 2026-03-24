@@ -30,7 +30,7 @@ jobs:
                       --no-progress
                       './**/*.md'
                       './**/*.html'
-                      './src/routes/folks.js'
+                      './src/routes/folks.ts'
                       --exclude-path 'README\.md$'
 
             - name: Create Issue From File
