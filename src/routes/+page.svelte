@@ -1,9 +1,15 @@
 <script lang="ts">
-    import { folks, type Folk, type Field } from "./folks";
+    import { folks } from "$lib/data/folks";
+    import { weeklyFeatured } from "$lib/data/featured";
+    import type { Folk, Field } from "$lib/types";
+    import FeaturedCard from "$lib/components/FeaturedCard.svelte";
+    import FolkCard from "$lib/components/FolkCard.svelte";
     import { writable } from "svelte/store";
     import { onMount } from "svelte";
 
     export let filteredFolks: Folk[] = [];
+
+    const featuredFolk = folks.find((f) => f.id === weeklyFeatured.folkId);
 
     let filterType = writable<Field | "all">("all");
 
@@ -15,6 +21,8 @@
     function setFilter(type: Field | "all") {
         filterType.set(type);
     }
+
+    let scrollY = 0;
 
     $: sortedFolks = filteredFolks
         .slice()
@@ -47,22 +55,31 @@
             (entries) => {
                 entries.forEach((entry) => {
                     if (entry.isIntersecting) {
-                        const name =
-                            entry.target.querySelector(".name").textContent;
-                        currentLetter.set(name.charAt(0).toUpperCase());
+                        const titleEl =
+                            entry.target.querySelector(".folk-title");
+                        if (titleEl) {
+                            const name = titleEl.textContent;
+                            const firstChar = name.charAt(0).toUpperCase();
+                            const normalizedChar = firstChar
+                                .normalize("NFD")
+                                .replace(/[\u0300-\u036f]/g, "");
+                            currentLetter.set(normalizedChar);
+                        }
                     }
                 });
             },
             { threshold: 0.5 },
         );
 
-        document.querySelectorAll(".portfolio-item").forEach((item) => {
+        document.querySelectorAll(".folk-card").forEach((item) => {
             observer.observe(item);
         });
 
         return () => observer.disconnect();
     });
 </script>
+
+<svelte:window bind:scrollY />
 
 <svelte:head>
     <title>Data Folks - A Curated List of Information Designers</title>
@@ -73,21 +90,21 @@
     {@html `<script type="application/ld+json">${JSON.stringify(schemaData)}</script>`}
 </svelte:head>
 
-<main class="container">
-    <section class="header">
+<main class="l-wrapper">
+    <section class="site-header l-container">
         <header>
-            <h1>Data Folks</h1>
+            <h1 class="site-header-title">Data Folks</h1>
         </header>
         <p>A curated list of awesome information designers</p>
-        <span
+        <span class="site-header-author"
             >By <a
                 href="https://github.com/juanchiparra"
-                class="external"
+                class="site-link"
                 target="_blank">Juanchi Parra</a
             ></span
         >
     </section>
-    <section class="introduction">
+    <section class="l-container l-section">
         <p>
             During the process of creating something it will always be more
             complicated when we are alone. Beyond being able to have the support
@@ -97,13 +114,38 @@
             to make it easier to get inspiration from these information designers.
         </p>
     </section>
-    <section id="category-explanation" class="explanation">
-        <p class="disclaimer">
-            The fields were created under my personal opinion. It doesn't mean
-            that this folk only knows about that subject, it's just that among
-            everything he knows, this particular one has helped me.
-        </p>
-        <p>You can select a field to filter:</p>
+
+    <section id="category-explanation" class="l-container l-section">
+        <div
+            style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 1rem;"
+        >
+            <p style="margin: 0;">You can select a field to filter</p>
+            <div class="info-tooltip-wrapper">
+                <svg
+                    viewBox="0 0 24 24"
+                    width="18"
+                    height="18"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="info-icon"
+                    ><circle cx="12" cy="12" r="10"></circle><line
+                        x1="12"
+                        y1="16"
+                        x2="12"
+                        y2="12"
+                    ></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg
+                >
+                <div class="tooltip-content">
+                    The fields were created under my personal opinion. It
+                    doesn't mean that this folk only knows about that subject,
+                    it's just that among everything he knows, this particular
+                    one has helped me
+                </div>
+            </div>
+        </div>
         <ul>
             <li><strong>All:</strong> All folks in one place</li>
             <li>
@@ -131,68 +173,62 @@
         </ul>
     </section>
 
-    <div class="filter-buttons">
+    {#if featuredFolk}
+        <FeaturedCard
+            {featuredFolk}
+            reason={weeklyFeatured.reason}
+            reasonMobile={weeklyFeatured.reasonMobile}
+        />
+    {/if}
+
+    <div class="filter-nav l-container is-wide l-section">
         <button
-            class:active={$filterType === "all"}
+            class="filter-btn"
+            class:is-active={$filterType === "all"}
             on:click={() => setFilter("all")}>All</button
         >
         <button
-            class:active={$filterType === "interactive"}
+            class="filter-btn"
+            class:is-active={$filterType === "interactive"}
             on:click={() => setFilter("interactive")}>Interactive</button
         >
         <button
-            class:active={$filterType === "designer"}
+            class="filter-btn"
+            class:is-active={$filterType === "designer"}
             on:click={() => setFilter("designer")}>Designer</button
         >
         <button
-            class:active={$filterType === "mastermind"}
+            class="filter-btn"
+            class:is-active={$filterType === "mastermind"}
             on:click={() => setFilter("mastermind")}>Mastermind</button
         >
         <button
-            class:active={$filterType === "maps"}
+            class="filter-btn"
+            class:is-active={$filterType === "maps"}
             on:click={() => setFilter("maps")}>Maps</button
         >
-        <button
-            class:active={$filterType === "hands"}
-            on:click={() => setFilter("hands")}>Hands-on</button
+        <button class="filter-btn" on:click={() => setFilter("hands")}
+            >Hands-on</button
         >
     </div>
-    <section id="projects" class="projects center-x">
-        <div class="projects-list">
+
+    <section id="projects" class="l-container is-wide l-section">
+        <div class="l-grid">
             {#each sortedFolks as folk}
-                <a
-                    class="portfolio-item"
-                    href={folk.data.page}
-                    target="_blank"
-                    aria-label="Visit {folk.data.name}'s page"
-                    on:click={() =>
-                        window.fathom?.trackEvent(
-                            `portfolio click: ${folk.data.name}`,
-                        )}
-                >
-                    <div
-                        class="background-image"
-                        style="background-image: url({folk.data.image});"
-                        alt="{folk.data.name} - {folk.data.type}"
-                    ></div>
-                    <div class="content">
-                        <div class="text-container">
-                            <h3 class="name">{folk.data.name}</h3>
-                            <p class="type">{folk.data.type}</p>
-                        </div>
-                    </div>
-                </a>
+                <FolkCard {folk} />
             {/each}
         </div>
-        <button
-            class="scroll-to-top"
-            aria-label="Scroll to top"
-            on:click={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-        >
-            <div class="triangle-up"></div>
-        </button>
+        <div class="fab-wrapper {scrollY > 500 ? 'is-visible' : ''}">
+            <button
+                class="fab-top"
+                aria-label="Scroll to top"
+                on:click={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+            >
+                <div class="fab-icon-up"></div>
+            </button>
+        </div>
     </section>
-    <div class="current-letter">
+    <div class="indicator-letter {scrollY > 500 ? 'is-visible' : ''}">
         {$currentLetter}
     </div>
 </main>
