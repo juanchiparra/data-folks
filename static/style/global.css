@@ -232,13 +232,8 @@ li {
     position: relative;
     border: 1px solid var(--border-subtle);
     border-radius: var(--radius-xl);
-    background: linear-gradient(
-        145deg,
-        rgba(255, 255, 255, 0.05) 0%,
-        rgba(0, 0, 0, 0) 100%
-    );
+    background: var(--gray-850);
     overflow: hidden;
-    box-shadow: var(--shadow-lg);
 }
 
 .featured-badge {

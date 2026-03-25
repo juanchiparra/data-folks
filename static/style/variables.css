@@ -3,8 +3,9 @@
     --gray-300: #dddddd;
     --gray-500: #888888;
     --gray-600: #666666;
-    --gray-800: #333333;
-    --gray-850: #2a2a2a;
+    --gray-700: #333333;
+    --gray-800: #2a2a2a;
+    --gray-850: #1e1e1e;
     --gray-900: #141414;
 
     --orange-500: #ff825c;
@@ -15,7 +16,7 @@
 
     --bg-canvas: var(--gray-900);
     --bg-card: var(--gray-900);
-    --bg-surface: var(--gray-800);
+    --bg-surface: var(--gray-700);
 
     --text-heading: var(--gray-100);
     --text-body: var(--gray-100);
@@ -24,9 +25,9 @@
     --text-link: var(--gray-100);
     --text-link-hover: var(--gray-300);
 
-    --border-subtle: var(--gray-800);
+    --border-subtle: var(--gray-700);
     --border-focus: var(--gray-600);
-    --border-hover: var(--gray-850);
+    --border-hover: var(--gray-800);
 
     --tag-interactive: var(--orange-500);
     --tag-designer: var(--yellow-500);
