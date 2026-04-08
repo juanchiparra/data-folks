@@ -34,6 +34,12 @@ p {
     line-height: 1.5;
 }
 
+.info-tooltip-wrapper:focus-visible {
+    outline: 2px solid var(--border-focus);
+    outline-offset: 4px;
+    border-radius: 4px;
+}
+
 ul {
     padding-left: var(--space-lg);
 }
@@ -66,6 +72,13 @@ li {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: var(--space-sm);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.l-grid > li {
+    display: contents;
 }
 
 .l-stack {
@@ -119,8 +132,12 @@ li {
     align-items: center;
     cursor: help;
     color: var(--text-muted);
+    background: none;
+    border: none;
+    padding: 0;
 }
-.info-tooltip-wrapper:hover {
+.info-tooltip-wrapper:hover,
+.info-tooltip-wrapper:focus-visible {
     color: var(--text-body);
 }
 .tooltip-content {
@@ -151,12 +168,14 @@ li {
         left: -100px;
         transform: translateX(0) translateY(5px);
     }
-    .info-tooltip-wrapper:hover .tooltip-content {
+    .info-tooltip-wrapper:hover .tooltip-content,
+    .info-tooltip-wrapper:focus-visible .tooltip-content {
         transform: translateX(0) translateY(0);
     }
 }
 
-.info-tooltip-wrapper:hover .tooltip-content {
+.info-tooltip-wrapper:hover .tooltip-content,
+.info-tooltip-wrapper:focus-visible .tooltip-content {
     opacity: 1;
     pointer-events: auto;
     transform: translateX(-50%) translateY(0);
@@ -178,7 +197,8 @@ li {
     position: relative;
 }
 
-.folk-card:hover {
+.folk-card:hover,
+.folk-card:focus-visible {
     transform: scale(1.04);
     box-shadow: var(--shadow-md);
 }
@@ -194,7 +214,8 @@ li {
     transition: opacity var(--transition-base);
 }
 
-.folk-card:hover .folk-bg-image {
+.folk-card:hover .folk-bg-image,
+.folk-card:focus-visible .folk-bg-image {
     opacity: 0.1;
 }
 
@@ -211,7 +232,8 @@ li {
     display: none;
 }
 
-.folk-card:hover .folk-content {
+.folk-card:hover .folk-content,
+.folk-card:focus-visible .folk-content {
     display: flex;
 }
 
