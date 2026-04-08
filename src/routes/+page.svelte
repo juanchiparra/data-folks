@@ -120,7 +120,11 @@
             style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 1rem;"
         >
             <p style="margin: 0;">You can select a field to filter</p>
-            <div class="info-tooltip-wrapper">
+            <button
+                class="info-tooltip-wrapper"
+                type="button"
+                aria-label="More information about fields"
+            >
                 <svg
                     viewBox="0 0 24 24"
                     width="18"
@@ -144,7 +148,7 @@
                     it's just that among everything he knows, this particular
                     one has helped me
                 </div>
-            </div>
+            </button>
         </div>
         <ul>
             <li><strong>All:</strong> All folks in one place</li>
@@ -213,11 +217,13 @@
     </div>
 
     <section id="projects" class="l-container is-wide l-section">
-        <div class="l-grid">
+        <ul class="l-grid">
             {#each sortedFolks as folk}
-                <FolkCard {folk} />
+                <li>
+                    <FolkCard {folk} />
+                </li>
             {/each}
-        </div>
+        </ul>
         <div class="fab-wrapper {scrollY > 500 ? 'is-visible' : ''}">
             <button
                 class="fab-top"
