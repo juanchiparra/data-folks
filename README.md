@@ -31,6 +31,7 @@ The fields were created under my personal opinion. It doesn't mean that this fol
 | Amy Cesal | https://www.amycesal.com/ | Mastermind |
 | Andrea Giambelli | https://www.andreagiambelli.com/ | Interactive |
 | Ani Matevosian | https://www.animatevosian.com/ | Interactive |
+| Annie Ng | https://annieng.com/ | Interactive |
 | Arjun Kakkar | https://arjunkakkkar.mmm.page/ | Interactive |
 | Artur Galocha | https://arturgalocha.com/ | Interactive |
 | Ashley Cai | https://www.ashleycai.com/ | Interactive |
@@ -128,6 +129,7 @@ The fields were created under my personal opinion. It doesn't mean that this fol
 | Prinz Magtulis | https://www.prinzmagtulis.com/ | Interactive |
 | Rachael Dottle | https://rachaeldottle.com/ | Interactive |
 | Rahul Mukherjee | https://www.rmukherjee.com/ | Interactive |
+| Rodolfo Almeida | https://rodolfoalmeida.info/ | Interactive |
 | Rodrigo Menegat | https://meneg.at/ | Interactive |
 | Rosie Ettenheim | https://www.rosieettenheim.com/ | Designer |
 | Ryan Best | https://ryanabest.com/ | Interactive |

@@ -1280,6 +1280,24 @@ export const folks: Folk[] = [
             image: images["/src/lib/images/artur-galocha.webp"].default,
         },
     },
+    {
+        id: 161,
+        data: {
+            name: "Annie Ng",
+            page: "https://annieng.com/",
+            type: "interactive",
+            image: images["/src/lib/images/annie-ng.webp"].default,
+        },
+    },
+    {
+        id: 162,
+        data: {
+            name: "Rodolfo Almeida",
+            page: "https://rodolfoalmeida.info/",
+            type: "interactive",
+            image: images["/src/lib/images/rodolfo-almeida.webp"].default,
+        },
+    },
 ].map((folk): Folk => {
     const path = folk.data.image;
     return {
