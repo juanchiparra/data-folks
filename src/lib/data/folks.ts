@@ -1167,7 +1167,7 @@ export const folks: Folk[] = [
         id: 148,
         data: {
             name: "Harry Lewis-Irlam",
-            page: "https://www.heligraphica.com/",
+            page: "https://www.heligraphica.studio/",
             type: "interactive",
             image: images["/src/lib/images/harry-lewis-irlam.webp"].default,
         },

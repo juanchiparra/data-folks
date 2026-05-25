@@ -68,7 +68,7 @@ The fields were created under my personal opinion. It doesn't mean that this fol
 | Gurman Bhatia | https://gurmanbhatia.com/ | Interactive |
 | Han Huang | https://jashcny.github.io/ | Interactive |
 | HaoChe Hung | https://haochehung.com/ | Designer |
-| Harry Lewis-Irlam | https://www.heligraphica.com/ | Interactive |
+| Harry Lewis-Irlam | https://www.heligraphica.studio/ | Interactive |
 | Harry Stevens | https://harryjstevens.com/ | Mastermind |
 | Hesham Eissa | https://heshameissa.com/ | Interactive |
 | Ihar Yanouski | https://yanouski.com/ | Interactive |
