@@ -771,7 +771,7 @@ export const folks: Folk[] = [
         id: 98,
         data: {
             name: "Sarah Fawson",
-            page: "https://thedatasays.org/",
+            page: "https://www.sarahfawson.com/",
             type: "designer",
             image: images["/src/lib/images/sarah-fawson.webp"].default,
         },

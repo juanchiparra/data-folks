@@ -134,7 +134,7 @@ The fields were created under my personal opinion. It doesn't mean that this fol
 | Rosie Ettenheim | https://www.rosieettenheim.com/ | Designer |
 | Ryan Best | https://ryanabest.com/ | Interactive |
 | Sara I. Belled | https://saraibelled.github.io/porfolio/ | Interactive |
-| Sarah Fawson | https://thedatasays.org/ | Designer |
+| Sarah Fawson | https://www.sarahfawson.com/ | Designer |
 | Sarah Fossheim | https://fossheim.io/ | Mastermind |
 | Sarah Kay Miller | https://sarahkaymiller.com/ | Designer |
 | Shelly Cheng | https://shellyscheng.github.io/ | Interactive |
