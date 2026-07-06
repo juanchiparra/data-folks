@@ -1,8 +1,8 @@
 import type { FeaturedFolk } from "$lib/types";
 
 export const weeklyFeatured: FeaturedFolk = {
-    folkId: 9,
-    reason: "Amelia is a designer and developer who explores the intersection of data, interfaces, and storytelling. She is the author of Fullstack D3 and Data Visualization, a book that was essential to my learning process for D3. There's also a course version. Her teaching style is highly practical and thoroughly explores the fundamentals. Also, she has tutorials on her website and always shares updates about her work and experiments on social media, so I recommend following her to learn from her",
+    folkId: 36,
+    reason: "Giorgia is an information designer and partner at Pentagram, known for her philosophy of <b>\"Data Humanism.\"</b> She was the one who introduced me to data visualization through <b>Dear Data</b>, before that, I hadn't even heard the term. The book changed my perspective on how to approach information. Her focus on the <b>human stories</b> behind the numbers and her use of <b>hand-drawn visual language</b> are a constant source of inspiration for me. In each of her projects, I’m impressed by how she innovates in the way she tells stories. If you haven’t seen any of her work, a great place to start is <a href='https://giorgialupi.com/1374-days-nyt-visual-oped' target='_blank'>1374 Days: My Life with Long COVID</a>",
     reasonMobile:
-        "Amelia is a <b>designer and developer</b> who explores the intersection of <b>data, interfaces, and storytelling</b>. She is the author of <b>Fullstack D3 and Data Visualization</b>, a book that was essential to my learning process for <b>D3</b>",
+        "Giorgia is an information designer known for her philosophy of <b>'Data Humanism'</b>. She introduced me to data visualization through <b>Dear Data</b>. Her <b>hand-drawn visual language</b> is a constant source of inspiration",
 };
