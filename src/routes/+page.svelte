@@ -180,8 +180,8 @@
     {#if featuredFolk}
         <FeaturedCard
             {featuredFolk}
-            reason={weeklyFeatured.reason}
-            reasonMobile={weeklyFeatured.reasonMobile}
+            reason={featuredFolk.data.reason ?? ""}
+            reasonMobile={featuredFolk.data.reasonMobile}
         />
     {/if}
 

@@ -10,6 +10,8 @@ export interface FolkData {
     page: string;
     type: Field | string;
     image: string;
+    reason?: string;
+    reasonMobile?: string;
 }
 
 export interface Folk {
@@ -19,6 +21,4 @@ export interface Folk {
 
 export interface FeaturedFolk {
     folkId: number;
-    reason: string;
-    reasonMobile?: string;
 }
