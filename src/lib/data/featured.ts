@@ -1,5 +1,5 @@
 import type { FeaturedFolk } from "$lib/types";
 
 export const weeklyFeatured: FeaturedFolk = {
-    folkId: 99,
+    folkId: 83,
 };
