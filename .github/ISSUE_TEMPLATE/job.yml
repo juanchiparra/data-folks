@@ -1,0 +1,54 @@
+name: Suggest a job
+description: Propose an open role in information design or data visualization
+title: "Job suggestion"
+labels: ["job"]
+assignees: ["juanchiparra"]
+body:
+  - type: input
+    id: title
+    attributes:
+      label: Job title
+      placeholder: Senior Information Designer
+    validations:
+      required: true
+  - type: input
+    id: company
+    attributes:
+      label: Company or organization
+      placeholder: Datypical
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: Link to the job posting
+      placeholder: https://...
+    validations:
+      required: true
+  - type: input
+    id: location
+    attributes:
+      label: Location
+      placeholder: Remote / New York, USA
+    validations:
+      required: true
+  - type: dropdown
+    id: type
+    attributes:
+      label: Type
+      options:
+        - Full-time
+        - Part-time
+        - Contract
+        - Internship
+        - Freelance
+    validations:
+      required: true
+  - type: input
+    id: expires
+    attributes:
+      label: Application deadline
+      description: Optional. Use the format YYYY-MM-DD.
+      placeholder: "2026-10-09"
+    validations:
+      required: false
