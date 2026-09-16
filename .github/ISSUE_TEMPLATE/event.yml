@@ -1,0 +1,62 @@
+name: Suggest an event
+description: Propose a conference, workshop, meetup, or talk
+title: "Event suggestion"
+labels: ["event"]
+assignees: ["juanchiparra"]
+body:
+  - type: input
+    id: title
+    attributes:
+      label: Event name
+      placeholder: Data visualization conference
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: Link
+      placeholder: https://...
+    validations:
+      required: true
+  - type: input
+    id: date
+    attributes:
+      label: Start date
+      description: Use the format YYYY-MM-DD.
+      placeholder: "2026-11-08"
+    validations:
+      required: true
+  - type: input
+    id: endDate
+    attributes:
+      label: End date
+      description: Optional. Use the format YYYY-MM-DD.
+      placeholder: "2026-11-13"
+    validations:
+      required: false
+  - type: input
+    id: location
+    attributes:
+      label: Location
+      placeholder: Boston, USA (Hybrid) / Online
+    validations:
+      required: true
+  - type: dropdown
+    id: type
+    attributes:
+      label: Type
+      options:
+        - Conference
+        - Workshop
+        - Meetup
+        - Talk
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Short description
+      description: One sentence, around 15-20 words.
+      placeholder: A conference on data visualization, information design, and visual storytelling.
+    validations:
+      required: false
