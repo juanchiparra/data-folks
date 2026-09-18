@@ -1,8 +1,11 @@
 <script lang="ts">
     import type { Folk } from "$lib/types";
-    export let featuredFolk: Folk;
-    export let reason: string;
-    export let reasonMobile: string | undefined = undefined;
+
+    let {
+        featuredFolk,
+        reason,
+        reasonMobile,
+    }: { featuredFolk: Folk; reason: string; reasonMobile?: string } = $props();
 
     function handleEvent() {
         if (typeof window !== "undefined" && window.fathom) {
@@ -36,7 +39,7 @@
                     target="_blank"
                     rel="noopener"
                     class="featured-action"
-                    on:click={handleEvent}
+                    onclick={handleEvent}
                 >
                     View portfolio
                 </a>

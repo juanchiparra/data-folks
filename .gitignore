@@ -24,3 +24,6 @@ vite.config.ts.timestamp-*
 
 # Experimental
 src/routes/experimental/
+
+# Private
+docs/*

@@ -6,8 +6,8 @@ The fields were created under my personal opinion. It doesn't mean that this fol
 
 **The description of each field:**
 - Interactive: Those who usually do interactive visualizations, either with D3, Svelte...
-- Designer Those good at designing visualizations with programs such as Illustrator or Photoshop, or who tend to make static visualizations
-- Mastermind: Those from whom I have been able to learn over the years, either by a book, a course, or even their publications on social media or their blog
+- Designer: Those good at designing visualizations with programs such as Illustrator or Photoshop, or who tend to make static visualizations
+- Mastermind: Those from whom I have been able to learn over the years, either by a book, a course, a video, or even their publications on social media or their blog
 - Maps:Those who make maps in a thousand and one possible ways
 - Hands-on: Those who can create visualizations with pen and paper
 

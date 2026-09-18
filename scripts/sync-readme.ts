@@ -1,11 +1,21 @@
 import fs from "fs";
 
-const folksContent = fs.readFileSync("./src/lib/data/folks.ts", "utf-8");
+interface Folk {
+    name: string;
+    page: string;
+    type: string;
+}
+
+const folksContent: string = fs.readFileSync(
+    "./src/lib/data/folks.ts",
+    "utf-8",
+);
 const regex =
     /name:\s*["']([^"']+)["'],\s*page:\s*["']([^"']+)["'],\s*type:\s*["']([^"']+)["']/g;
 
-let match;
-const folks = [];
+let match: RegExpExecArray | null;
+const folks: Folk[] = [];
+
 while ((match = regex.exec(folksContent)) !== null) {
     folks.push({
         name: match[1],
@@ -25,7 +35,7 @@ folks.forEach((f) => {
 
 // Update README.md
 const readmePath = "./README.md";
-let readmeContent = fs.readFileSync(readmePath, "utf-8");
+let readmeContent: string = fs.readFileSync(readmePath, "utf-8");
 
 const startMarker = "## List";
 const endMarker = "## Contributions";
