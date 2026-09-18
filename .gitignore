@@ -26,4 +26,4 @@ vite.config.ts.timestamp-*
 src/routes/experimental/
 
 # Private
-docs/maintenance.md
+docs/*
