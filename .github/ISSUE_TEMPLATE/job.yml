@@ -42,6 +42,7 @@ body:
         - Contract
         - Internship
         - Freelance
+        - Program
     validations:
       required: true
   - type: input
