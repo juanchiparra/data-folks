@@ -1,37 +1,110 @@
 <script lang="ts">
-    import { folks } from "$lib/data/folks";
-    import { weeklyFeatured } from "$lib/data/featured";
-    import type { Folk, Field } from "$lib/types";
+    import { goto } from "$app/navigation";
+    import { page } from "$app/stores";
     import FeaturedCard from "$lib/components/FeaturedCard.svelte";
     import FolkCard from "$lib/components/FolkCard.svelte";
-    import { writable } from "svelte/store";
-    import { onMount } from "svelte";
+    import Seo from "$lib/components/Seo.svelte";
+    import Nav from "$lib/components/Nav.svelte";
+    import Suggest from "$lib/components/Suggest.svelte";
+    import { weeklyFeatured } from "$lib/data/featured";
+    import { folks } from "$lib/data/folks";
+    import { siteUrl } from "$lib/data/seo";
+    import { browser } from "$app/environment";
+    import type { Field } from "$lib/types";
 
-    export let filteredFolks: Folk[] = [];
+    const featuredFolk = folks.find(
+        (folk) => folk.id === weeklyFeatured.folkId,
+    );
 
-    const featuredFolk = folks.find((f) => f.id === weeklyFeatured.folkId);
+    let filterType = $derived(
+        browser
+            ? (($page.url.searchParams.get("filter") as Field | null) ?? "all")
+            : "all",
+    );
+    let scrollY = $state(0);
+    let showTooltip = $state(false);
+    let currentLetter = $state("");
 
-    let filterType = writable<Field | "all">("all");
-
-    $: filteredFolks =
-        $filterType === "all"
-            ? folks
-            : folks.filter((folk) => folk.data.type === $filterType);
-
-    function setFilter(type: Field | "all") {
-        filterType.set(type);
+    function getLetter(name: string) {
+        return name
+            .charAt(0)
+            .toUpperCase()
+            .normalize("NFD")
+            .replace(/[\u0300-\u036f]/g, "");
     }
 
-    let scrollY = 0;
+    function setFilter(type: Field | "all") {
+        const nextUrl = new URL($page.url);
 
-    $: sortedFolks = filteredFolks
-        .slice()
-        .sort((a, b) => a.data.name.localeCompare(b.data.name));
+        if (type === "all") {
+            nextUrl.searchParams.delete("filter");
+        } else {
+            nextUrl.searchParams.set("filter", type);
+        }
 
-    let currentLetter = writable("?");
+        goto(nextUrl, { keepFocus: true, noScroll: true });
+    }
 
-    // JSON-LD schema for SEO
-    $: schemaData = {
+    const filteredFolks = $derived(
+        folks.filter((folk) => {
+            return filterType === "all" || folk.data.type === filterType;
+        }),
+    );
+
+    const sortedFolks = $derived(
+        filteredFolks
+            .slice()
+            .sort((first, second) =>
+                first.data.name.localeCompare(second.data.name),
+            ),
+    );
+
+    const firstLetter = $derived(
+        sortedFolks.length > 0 ? getLetter(sortedFolks[0].data.name) : "",
+    );
+
+    $effect(() => {
+        if (typeof IntersectionObserver === "undefined") {
+            return;
+        }
+
+        currentLetter = "";
+
+        if (sortedFolks.length === 0) {
+            return;
+        }
+
+        const observer = new IntersectionObserver(
+            (entries) => {
+                const visibleEntry = entries.find(
+                    (entry) => entry.isIntersecting,
+                );
+
+                if (!visibleEntry) {
+                    return;
+                }
+
+                const name = visibleEntry.target.getAttribute("data-name");
+
+                if (name) {
+                    currentLetter = getLetter(name);
+                }
+            },
+            { rootMargin: "-40% 0px -40% 0px" },
+        );
+
+        const cards =
+            document.querySelectorAll<HTMLElement>(".folk-card-wrapper");
+        cards.forEach((card) => {
+            observer.observe(card);
+        });
+
+        return () => {
+            observer.disconnect();
+        };
+    });
+
+    const schemaData = $derived({
         "@context": "https://schema.org",
         "@type": "ItemList",
         name: "Data Folks - Information Designers",
@@ -43,59 +116,31 @@
                 "@type": "Person",
                 name: folk.data.name,
                 url: folk.data.page,
-                image: `https://juanchiparra.github.io/data-folks${folk.data.image}`,
+                image: `${siteUrl}${folk.data.image}`,
                 jobTitle: "Information Designer",
                 knowsAbout: ["Data Visualization", folk.data.type],
             },
         })),
-    };
-
-    onMount(() => {
-        const observer = new IntersectionObserver(
-            (entries) => {
-                entries.forEach((entry) => {
-                    if (entry.isIntersecting) {
-                        const titleEl =
-                            entry.target.querySelector(".folk-title");
-                        if (titleEl) {
-                            const name = titleEl.textContent;
-                            const firstChar = name.charAt(0).toUpperCase();
-                            const normalizedChar = firstChar
-                                .normalize("NFD")
-                                .replace(/[\u0300-\u036f]/g, "");
-                            currentLetter.set(normalizedChar);
-                        }
-                    }
-                });
-            },
-            { threshold: 0.5 },
-        );
-
-        document.querySelectorAll(".folk-card").forEach((item) => {
-            observer.observe(item);
-        });
-
-        return () => observer.disconnect();
     });
 </script>
 
 <svelte:window bind:scrollY />
 
+<Seo pageId="home" />
+
 <svelte:head>
-    <title>Data Folks - A Curated List of Information Designers</title>
-    <meta
-        name="description"
-        content="A curated collection of portfolios from information designers and data visualization practitioners to inspire you."
-    />
     {@html `<script type="application/ld+json">${JSON.stringify(schemaData)}</script>`}
 </svelte:head>
 
-<main class="l-wrapper">
+<main>
     <section class="site-header l-container">
+        <Nav current="folks" />
         <header>
             <h1 class="site-header-title">Data Folks</h1>
         </header>
-        <p>A curated list of awesome information designers</p>
+        <p class="site-header-desc">
+            A curated list of awesome information designers
+        </p>
         <span class="site-header-author"
             >By <a
                 href="https://github.com/juanchiparra"
@@ -104,6 +149,7 @@
             ></span
         >
     </section>
+
     <section class="l-container l-section">
         <p>
             During the process of creating something it will always be more
@@ -113,68 +159,11 @@
             and make us overcome our limits. That's why <b>data folks</b> were created,
             to make it easier to get inspiration from these information designers.
         </p>
-    </section>
-
-    <section id="category-explanation" class="l-container l-section">
-        <div
-            style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 1rem;"
-        >
-            <p style="margin: 0;">You can select a field to filter</p>
-            <button
-                class="info-tooltip-wrapper"
-                type="button"
-                aria-label="More information about fields"
-            >
-                <svg
-                    viewBox="0 0 24 24"
-                    width="18"
-                    height="18"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    fill="none"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    class="info-icon"
-                    ><circle cx="12" cy="12" r="10"></circle><line
-                        x1="12"
-                        y1="16"
-                        x2="12"
-                        y2="12"
-                    ></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg
-                >
-                <div class="tooltip-content">
-                    The fields were created under my personal opinion. It
-                    doesn't mean that this folk only knows about that subject,
-                    it's just that among everything he knows, this particular
-                    one has helped me
-                </div>
-            </button>
-        </div>
-        <ul>
-            <li><strong>All:</strong> All folks in one place</li>
-            <li>
-                <strong>Interactive:</strong> Those who usually do interactive visualizations,
-                either with D3, Svelte...
-            </li>
-            <li>
-                <strong>Designer</strong> Those good at designing visualizations
-                with programs such as Illustrator or Photoshop, or who tend to make
-                static visualizations
-            </li>
-            <li>
-                <strong>Mastermind:</strong> Those from whom I have been able to
-                learn over the years, either by a book, a course, or even their publications
-                on social media or their blog
-            </li>
-            <li>
-                <strong>Maps:</strong>Those who make maps in a thousand and one
-                possible ways
-            </li>
-            <li>
-                <strong>Hands-on:</strong> Those who can create visualizations with
-                pen and paper
-            </li>
-        </ul>
+        <p>
+            Beyond the list, the site gathers a weekly selection of works worth
+            studying, a calendar of events, and a board of open roles, so
+            there's always a next step.
+        </p>
     </section>
 
     {#if featuredFolk}
@@ -185,56 +174,151 @@
         />
     {/if}
 
-    <div class="filter-nav l-container is-wide l-section">
-        <button
-            class="filter-btn"
-            class:is-active={$filterType === "all"}
-            on:click={() => setFilter("all")}>All</button
-        >
-        <button
-            class="filter-btn"
-            class:is-active={$filterType === "interactive"}
-            on:click={() => setFilter("interactive")}>Interactive</button
-        >
-        <button
-            class="filter-btn"
-            class:is-active={$filterType === "designer"}
-            on:click={() => setFilter("designer")}>Designer</button
-        >
-        <button
-            class="filter-btn"
-            class:is-active={$filterType === "mastermind"}
-            on:click={() => setFilter("mastermind")}>Mastermind</button
-        >
-        <button
-            class="filter-btn"
-            class:is-active={$filterType === "maps"}
-            on:click={() => setFilter("maps")}>Maps</button
-        >
-        <button class="filter-btn" on:click={() => setFilter("hands")}
-            >Hands-on</button
-        >
+    <div
+        class="filter-nav-wrapper l-container is-wide l-section"
+        style="margin-top: 2rem;"
+    >
+        <div class="filter-nav">
+            <button
+                class="filter-btn"
+                class:is-active={filterType === "all"}
+                onclick={() => setFilter("all")}>All</button
+            >
+            <button
+                class="filter-btn"
+                class:is-active={filterType === "interactive"}
+                onclick={() => setFilter("interactive")}>Interactive</button
+            >
+            <button
+                class="filter-btn"
+                class:is-active={filterType === "designer"}
+                onclick={() => setFilter("designer")}>Designer</button
+            >
+            <button
+                class="filter-btn"
+                class:is-active={filterType === "mastermind"}
+                onclick={() => setFilter("mastermind")}>Mastermind</button
+            >
+            <button
+                class="filter-btn"
+                class:is-active={filterType === "maps"}
+                onclick={() => setFilter("maps")}>Maps</button
+            >
+            <button
+                class="filter-btn"
+                class:is-active={filterType === "hands"}
+                onclick={() => setFilter("hands")}>Hands-on</button
+            >
+
+            <div
+                class="filter-info-wrapper"
+                role="group"
+                aria-label="Filter explanations"
+                onmouseenter={() => (showTooltip = true)}
+                onmouseleave={() => (showTooltip = false)}
+            >
+                <button
+                    class="filter-info-btn"
+                    type="button"
+                    aria-label="Field definitions"
+                    aria-expanded={showTooltip}
+                    onclick={() => (showTooltip = !showTooltip)}
+                >
+                    <svg
+                        viewBox="0 0 24 24"
+                        width="16"
+                        height="16"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        fill="none"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        ><circle cx="12" cy="12" r="10"></circle><line
+                            x1="12"
+                            y1="16"
+                            x2="12"
+                            y2="12"
+                        ></line><line x1="12" y1="8" x2="12.01" y2="8"
+                        ></line></svg
+                    >
+                </button>
+                {#if showTooltip}
+                    <div
+                        class="filter-info-backdrop"
+                        role="presentation"
+                        aria-hidden="true"
+                        onclick={() => (showTooltip = false)}
+                    ></div>
+                    <div class="filter-info-popup">
+                        <ul>
+                            <li>
+                                <strong>All:</strong> Every folk, no field filter.
+                            </li>
+                            <li>
+                                <strong>Interactive:</strong> Builds interactive
+                                charts and visual stories, usually with code (D3,
+                                Svelte, P5)
+                            </li>
+                            <li>
+                                <strong>Designer:</strong> Focuses on static visuals
+                                and craft, often with Illustrator or Photoshop
+                            </li>
+                            <li>
+                                <strong>Mastermind:</strong> Someone to learn from
+                                through books, courses, videos, or their writing
+                            </li>
+                            <li>
+                                <strong>Maps:</strong> Works with geography and cartography
+                            </li>
+                            <li>
+                                <strong>Hands-on:</strong> Creates physical or hand-drawn
+                                visualizations, with pen and paper
+                            </li>
+                        </ul>
+                    </div>
+                {/if}
+            </div>
+        </div>
     </div>
 
     <section id="projects" class="l-container is-wide l-section">
-        <ul class="l-grid">
-            {#each sortedFolks as folk}
-                <li>
-                    <FolkCard {folk} />
-                </li>
-            {/each}
-        </ul>
+        {#if sortedFolks.length === 0}
+            <div class="empty-state">
+                <h2>No folks matched these filters</h2>
+                <p>Try another field or return to all.</p>
+            </div>
+        {:else}
+            <ul class="l-grid">
+                {#each sortedFolks as folk (folk.id)}
+                    <li class="folk-card-wrapper" data-name={folk.data.name}>
+                        <FolkCard {folk} />
+                    </li>
+                {/each}
+            </ul>
+        {/if}
+
         <div class="fab-wrapper {scrollY > 500 ? 'is-visible' : ''}">
             <button
                 class="fab-top"
                 aria-label="Scroll to top"
-                on:click={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+                onclick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
             >
                 <div class="fab-icon-up"></div>
             </button>
         </div>
     </section>
-    <div class="indicator-letter {scrollY > 500 ? 'is-visible' : ''}">
-        {$currentLetter}
+
+    <div
+        class="scroll-letter-indicator"
+        class:is-visible={scrollY > 300 &&
+            (currentLetter || firstLetter) !== ""}
+        aria-hidden="true"
+    >
+        {currentLetter || firstLetter}
     </div>
+
+    <Suggest
+        text="Know an information designer we're missing?"
+        action="Suggest a folk"
+    />
 </main>
