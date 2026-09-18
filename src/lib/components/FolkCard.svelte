@@ -1,7 +1,7 @@
 <script lang="ts">
     import type { Folk } from "$lib/types";
 
-    export let folk: Folk;
+    let { folk }: { folk: Folk } = $props();
 
     function handleEvent() {
         if (typeof window !== "undefined" && window.fathom) {
@@ -15,13 +15,18 @@
     href={folk.data.page}
     target="_blank"
     aria-label="Visit {folk.data.name}'s page"
-    on:click={handleEvent}
+    onclick={handleEvent}
 >
     <div
         class="folk-bg-image"
-        style="background-image: url({folk.data.image});"
-        aria-label="{folk.data.name} - {folk.data.type}"
-    ></div>
+    >
+        <img
+            src={folk.data.image}
+            alt="{folk.data.name} - {folk.data.type}"
+            loading="lazy"
+            decoding="async"
+        />
+    </div>
     <div class="folk-content">
         <div class="folk-info">
             <h3 class="folk-title">{folk.data.name}</h3>
