@@ -1,42 +1,42 @@
 name: Links
 
 on:
-    repository_dispatch:
-    workflow_dispatch:
-    schedule:
-        - cron: "0 12 * * 1"
+  repository_dispatch:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 12 * * 1"
 
 jobs:
-    linkChecker:
-        runs-on: ubuntu-latest
-        permissions:
-            issues: write
-        steps:
-            - uses: actions/checkout@v4
+  linkChecker:
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+    steps:
+      - uses: actions/checkout@v4
 
-            - name: Link Checker
-              id: lychee
-              uses: lycheeverse/lychee-action@v2
-              with:
-                  fail: false
-                  format: markdown
-                  output: ./lychee/out.md
-                  args: >
-                      --scheme http
-                      --scheme https
-                      --scheme mailto
-                      --exclude '%sveltekit\.assets%'
-                      --root-dir "$(pwd)"
-                      --no-progress
-                      './**/*.md'
-                      './**/*.html'
-                      './src/lib/data/folks.ts'
-                      --exclude-path 'README\.md$'
+      - name: Link Checker
+        id: lychee
+        uses: lycheeverse/lychee-action@v2
+        with:
+          fail: false
+          format: markdown
+          output: ./lychee/out.md
+          args: >
+            --scheme http
+            --scheme https
+            --scheme mailto
+            --exclude '%sveltekit\.assets%'
+            --root-dir "$(pwd)"
+            --no-progress
+            './**/*.md'
+            './**/*.html'
+            './src/lib/data/folks.ts'
+            --exclude-path 'README\.md$'
 
-            - name: Create Issue From File
-              if: steps.lychee.outputs.exit_code != 0
-              uses: peter-evans/create-issue-from-file@v5
-              with:
-                  title: Link checker
-                  content-filepath: ./lychee/out.md
-                  labels: report, automated issue
+      - name: Create Issue From File
+        if: steps.lychee.outputs.exit_code != 0
+        uses: peter-evans/create-issue-from-file@v5
+        with:
+          title: Link checker
+          content-filepath: ./lychee/out.md
+          labels: report, automated issue
