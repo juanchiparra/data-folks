@@ -23,11 +23,15 @@
       },
     })),
   };
+
+  // Built without a literal "<script>" so Svelte/ESLint don't treat it as a script tag
+  const schemaJsonLd =
+    "<" + `script type="application/ld+json">${JSON.stringify(schemaData)}</` + "script>";
 </script>
 
 <Seo pageId="works" />
 <svelte:head>
-  {@html `<script type="application/ld+json">${JSON.stringify(schemaData)}</script>`}
+  {@html schemaJsonLd}
 </svelte:head>
 
 <main>
