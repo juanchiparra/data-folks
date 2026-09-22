@@ -27,3 +27,7 @@ src/routes/experimental/
 
 # Private
 docs/*
+
+# Tests
+playwright-report/
+test-results/
