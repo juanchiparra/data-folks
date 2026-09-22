@@ -32,7 +32,7 @@ folks.forEach((f) => {
 
 // Update README.md
 const readmePath = "./README.md";
-let readmeContent: string = fs.readFileSync(readmePath, "utf-8");
+const readmeContent: string = fs.readFileSync(readmePath, "utf-8");
 
 const startMarker = "## List";
 const endMarker = "## Contributions";
