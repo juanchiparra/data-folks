@@ -31,3 +31,6 @@ docs/*
 # Tests
 playwright-report/
 test-results/
+
+# Husky
+.husky/_
