@@ -47,7 +47,7 @@
     "svelte": "^5.53.10",
     "svelte-check": "^4.7.6",
     "svelte-eslint-parser": "^1.8.1",
-    "tsx": "^4.23.12",
+    "tsx": "^4.23.15",
     "typescript": "^5.9.3",
     "typescript-eslint": "^8.70.1",
     "vite": "^7.3.1"
