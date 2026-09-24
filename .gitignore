@@ -22,12 +22,17 @@ Thumbs.db
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
 
-# Experimental
-src/routes/experimental/
+# Coverage
+coverage/
+
+# Playwright
+test-results/
+playwright-report/
+blob-report/
+playwright/.cache/
+
+# Husky
+.husky/_
 
 # Private
 docs/*
-
-# Tests
-playwright-report/
-test-results/
