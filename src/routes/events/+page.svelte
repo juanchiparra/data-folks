@@ -1,10 +1,10 @@
 <script lang="ts">
   import { onMount } from "svelte";
-  import EventCard from "$lib/components/EventCard.svelte";
-  import Nav from "$lib/components/Nav.svelte";
-  import Seo from "$lib/components/Seo.svelte";
-  import Suggest from "$lib/components/Suggest.svelte";
-  import { events } from "$lib/data/events";
+  import EventCard from "#lib/components/EventCard.svelte";
+  import Nav from "#lib/components/Nav.svelte";
+  import Seo from "#lib/components/Seo.svelte";
+  import Suggest from "#lib/components/Suggest.svelte";
+  import { events } from "#lib/data/events.js";
 
   function parseDate(dateStr: string) {
     return new Date(dateStr + "T00:00:00Z");

@@ -1,8 +1,8 @@
 <script lang="ts">
-  import WorkCard from "$lib/components/WorkCard.svelte";
-  import Nav from "$lib/components/Nav.svelte";
-  import Seo from "$lib/components/Seo.svelte";
-  import { recommendedWorks } from "$lib/data/works";
+  import WorkCard from "#lib/components/WorkCard.svelte";
+  import Nav from "#lib/components/Nav.svelte";
+  import Seo from "#lib/components/Seo.svelte";
+  import { recommendedWorks } from "#lib/data/works.js";
 
   const schemaData = {
     "@context": "https://schema.org",

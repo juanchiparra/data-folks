@@ -6,24 +6,19 @@
 </script>
 
 <nav class="site-nav" aria-label="Primary">
-  <a href={resolve("/")} class="site-nav-link" class:is-active={current === "folks"}>
-    Folks
-  </a>
-  <a
-    href={resolve("/works/")}
-    class="site-nav-link"
-    class:is-active={current === "works"}
+  <a href={resolve("/")} class="site-nav-link" class:is-active={current === "folks"}
+    >Folks</a
   >
+
+  <a href={resolve("works/")} class="site-nav-link" class:is-active={current === "works"}>
     Works
   </a>
   <a
-    href={resolve("/events/")}
+    href={resolve("events/")}
     class="site-nav-link"
-    class:is-active={current === "events"}
+    class:is-active={current === "events"}>Events</a
   >
-    Events
-  </a>
-  <a href={resolve("/jobs/")} class="site-nav-link" class:is-active={current === "jobs"}>
-    Jobs
-  </a>
+  <a href={resolve("jobs/")} class="site-nav-link" class:is-active={current === "jobs"}
+    >Jobs</a
+  >
 </nav>

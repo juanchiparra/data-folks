@@ -1,21 +1,21 @@
 <script lang="ts">
   import { goto } from "$app/navigation";
-  import { page } from "$app/stores";
-  import FeaturedCard from "$lib/components/FeaturedCard.svelte";
-  import FolkCard from "$lib/components/FolkCard.svelte";
-  import Seo from "$lib/components/Seo.svelte";
-  import Nav from "$lib/components/Nav.svelte";
-  import Suggest from "$lib/components/Suggest.svelte";
-  import { weeklyFeatured } from "$lib/data/featured";
-  import { folks } from "$lib/data/folks";
-  import { siteUrl } from "$lib/data/seo";
-  import { browser } from "$app/environment";
-  import type { Field } from "$lib/types";
+  import { page } from "$app/state";
+  import FeaturedCard from "#lib/components/FeaturedCard.svelte";
+  import FolkCard from "#lib/components/FolkCard.svelte";
+  import Seo from "#lib/components/Seo.svelte";
+  import Nav from "#lib/components/Nav.svelte";
+  import Suggest from "#lib/components/Suggest.svelte";
+  import { weeklyFeatured } from "#lib/data/featured.js";
+  import { folks } from "#lib/data/folks.js";
+  import { siteUrl } from "#lib/data/seo.js";
+  import { browser } from "$app/env";
+  import type { Field } from "#lib/types.js";
 
   const featuredFolk = folks.find((folk) => folk.id === weeklyFeatured.folkId);
 
   let filterType = $derived(
-    browser ? (($page.url.searchParams.get("filter") as Field | null) ?? "all") : "all",
+    browser ? ((page.url.searchParams.get("filter") as Field | null) ?? "all") : "all",
   );
   let scrollY = $state(0);
   let showTooltip = $state(false);
@@ -30,7 +30,7 @@
   }
 
   function setFilter(type: Field | "all") {
-    const nextUrl = new URL($page.url);
+    const nextUrl = new URL(page.url.href);
 
     if (type === "all") {
       nextUrl.searchParams.delete("filter");
@@ -38,7 +38,7 @@
       nextUrl.searchParams.set("filter", type);
     }
 
-    goto(nextUrl, { keepFocus: true, noScroll: true });
+    goto(nextUrl, { reset: false });
   }
 
   const filteredFolks = $derived(
@@ -52,7 +52,6 @@
       .slice()
       .sort((first, second) => first.data.name.localeCompare(second.data.name)),
   );
-
   const firstLetter = $derived(
     sortedFolks.length > 0 ? getLetter(sortedFolks[0].data.name) : "",
   );
@@ -220,9 +219,11 @@
             fill="none"
             stroke-linecap="round"
             stroke-linejoin="round"
-            ><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"
-            ></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg
           >
+            <circle cx="12" cy="12" r="10"></circle>
+            <line x1="12" y1="16" x2="12" y2="12"></line>
+            <line x1="12" y1="8" x2="12.01" y2="8"></line>
+          </svg>
         </button>
         {#if showTooltip}
           <div
@@ -233,27 +234,28 @@
           ></div>
           <div class="filter-info-popup">
             <ul>
+              <li><strong>All:</strong>Every folk, no field filter.</li>
+
               <li>
-                <strong>All:</strong> Every folk, no field filter.
+                <strong>Interactive:</strong>
+                Builds interactive charts and visual stories, usually with code (D3, Svelte,
+                P5)
               </li>
               <li>
-                <strong>Interactive:</strong> Builds interactive charts and visual stories,
-                usually with code (D3, Svelte, P5)
+                <strong>Designer:</strong>
+                Focuses on static visuals and craft, often with Illustrator or Photoshop
               </li>
               <li>
-                <strong>Designer:</strong> Focuses on static visuals and craft, often with Illustrator
-                or Photoshop
+                <strong>Mastermind:</strong>
+                Someone to learn from through books, courses, videos, or their writing
               </li>
               <li>
-                <strong>Mastermind:</strong> Someone to learn from through books, courses, videos,
-                or their writing
+                <strong>Maps:</strong>
+                Works with geography and cartography
               </li>
               <li>
-                <strong>Maps:</strong> Works with geography and cartography
-              </li>
-              <li>
-                <strong>Hands-on:</strong> Creates physical or hand-drawn visualizations, with
-                pen and paper
+                <strong>Hands-on:</strong>
+                Creates physical or hand-drawn visualizations, with pen and paper
               </li>
             </ul>
           </div>
