@@ -1,4 +1,4 @@
-import type { Work } from "$lib/types";
+import type { Work } from "#lib/types.js";
 
 export const recommendedWorks: Work[] = [
   {

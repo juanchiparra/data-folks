@@ -1,5 +1,5 @@
 <script lang="ts">
-  import type { Event } from "$lib/types";
+  import type { Event } from "#lib/types.js";
 
   let { event }: { event: Event } = $props();
 

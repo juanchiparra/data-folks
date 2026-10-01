@@ -1,5 +1,5 @@
 <script lang="ts">
-  import type { Folk } from "$lib/types";
+  import type { Folk } from "#lib/types.js";
 
   let {
     featuredFolk,

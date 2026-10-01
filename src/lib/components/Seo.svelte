@@ -1,6 +1,6 @@
 <script lang="ts">
-  import { page } from "$app/stores";
-  import { seoConfig, siteUrl } from "$lib/data/seo";
+  import { page } from "$app/state";
+  import { seoConfig, siteUrl } from "#lib/data/seo.js";
 
   let {
     pageId,
@@ -11,7 +11,7 @@
   } = $props();
 
   let meta = $derived(seoConfig[pageId] || seoConfig.home);
-  let url = $derived(`${siteUrl}${$page.url.pathname}`);
+  let url = $derived(`${siteUrl}${page.url.pathname}`);
 </script>
 
 <svelte:head>

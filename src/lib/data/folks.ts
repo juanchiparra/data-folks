@@ -1,4 +1,4 @@
-import type { Folk } from "$lib/types";
+import type { Folk } from "#lib/types.js";
 import { images } from "./imports";
 export const folks: Folk[] = [
   {
