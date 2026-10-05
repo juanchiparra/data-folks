@@ -63,4 +63,26 @@ export const events: Event[] = [
     description:
       "A BEAUTIFUL DATA session with Adrien Segal on turning data into tactile objects that bridge reason and emotion.",
   },
+  {
+    id: 7,
+    title: "Information+ 2027",
+    date: "2027-06-07",
+    endDate: "2027-06-09",
+    location: "Milan, Italy",
+    url: "https://informationplusconference.com/",
+    type: "Conference",
+    description:
+      "The biennial conference on information design and data visualization, hosted by the Department of Design at Politecnico di Milano.",
+  },
+  {
+    id: 8,
+    title: "The Visual Design of Data",
+    date: "2026-11-17",
+    endDate: "2026-11-26",
+    location: "Online",
+    url: "https://www.eventbrite.com/e/online-training-the-visual-design-of-data-tickets-1996366395630",
+    type: "Workshop",
+    description:
+      "A workshop with Stefanie Posavec, Valentina D'Efilippo, and Andy Kirk on creating effective data visualizations that tell a compelling story.",
+  },
 ];
