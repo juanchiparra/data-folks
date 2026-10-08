@@ -41,4 +41,14 @@ export const jobs: Job[] = [
     date: "2026-09-30",
     expires: "2026-10-21",
   },
+  {
+    id: 5,
+    title: "Graphic Designer / Data Visualization Artist",
+    company: "Institute for Progress",
+    location: "Washington, D.C., USA",
+    type: "Full-time",
+    url: "https://ifp.org/opportunity/graphic-designer-data-visualization-artist/",
+    date: "2026-10-08",
+    expires: "2026-10-15",
+  },
 ];
