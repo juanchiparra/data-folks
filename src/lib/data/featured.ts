@@ -1,5 +1,5 @@
 import type { FeaturedFolk } from "#lib/types.js";
 
 export const weeklyFeatured: FeaturedFolk = {
-  folkId: 99,
+  folkId: 83,
 };
