@@ -106,7 +106,7 @@
         "@type": "Person",
         name: folk.data.name,
         url: folk.data.page,
-        image: `${siteUrl}${folk.data.image}`,
+        image: `${siteUrl}${folk.data.image.img.src}`,
         jobTitle: "Information Designer",
         knowsAbout: ["Data Visualization", folk.data.type],
       },

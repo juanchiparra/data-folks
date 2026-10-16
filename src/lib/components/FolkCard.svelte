@@ -18,7 +18,7 @@
   onclick={handleEvent}
 >
   <div class="folk-bg-image">
-    <img
+    <enhanced:img
       src={folk.data.image}
       alt="{folk.data.name} - {folk.data.type}"
       loading="lazy"

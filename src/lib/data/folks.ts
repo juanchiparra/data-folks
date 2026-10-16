@@ -1329,13 +1329,4 @@ export const folks: Folk[] = [
       image: images["/src/lib/images/rodolfo-almeida.webp"].default,
     },
   },
-].map((folk): Folk => {
-  const path = folk.data.image;
-  return {
-    ...folk,
-    data: {
-      ...folk.data,
-      image: images[path]?.default || path,
-    },
-  };
-});
+];
