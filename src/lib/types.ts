@@ -1,3 +1,5 @@
+import type { Picture } from "@sveltejs/enhanced-img";
+
 export type Field = "interactive" | "designer" | "maps" | "mastermind" | "hands";
 
 export interface Folk {
@@ -9,7 +11,7 @@ export interface FolkData {
   name: string;
   page: string;
   type: Field | string;
-  image: string;
+  image: Picture;
   reason?: string;
   reasonMobile?: string;
 }
