@@ -51,4 +51,14 @@ export const jobs: Job[] = [
     date: "2026-10-08",
     expires: "2026-10-15",
   },
+  {
+    id: 6,
+    title: "Senior Data Journalist, BBC Verify",
+    company: "BBC",
+    location: "London, UK",
+    type: "Full-time",
+    url: "https://careers.bbc.co.uk/job/Senior-Data-Journalist%2C-BBC-Verify/54991-en_GB/",
+    date: "2026-10-16",
+    expires: "2026-11-02",
+  },
 ];
