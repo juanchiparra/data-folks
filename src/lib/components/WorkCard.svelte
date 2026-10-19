@@ -9,16 +9,26 @@
   const gifSrc = $derived(work.gif ? `/works/${work.gif}` : null);
 
   function lazyAutoplay(el: HTMLVideoElement) {
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      return;
+    }
+
     const play = () => el.play().catch(() => {});
+    const pause = () => el.pause();
+
     if (typeof IntersectionObserver === "undefined") {
       play();
       return;
     }
+
     const observer = new IntersectionObserver(
       (entries) => {
-        if (entries[0]?.isIntersecting) {
-          observer.disconnect();
-          play();
+        for (const entry of entries) {
+          if (entry.isIntersecting) {
+            play();
+          } else {
+            pause();
+          }
         }
       },
       { rootMargin: "400px" },
