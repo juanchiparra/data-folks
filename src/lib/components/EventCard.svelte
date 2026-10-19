@@ -1,11 +1,8 @@
 <script lang="ts">
   import type { Event } from "#lib/types.js";
+  import { parseDate } from "#lib/utils/dates.js";
 
   let { event }: { event: Event } = $props();
-
-  function parseDate(dateStr: string) {
-    return new Date(dateStr + "T00:00:00Z");
-  }
 
   function getDateInfo(dateStr: string) {
     const d = parseDate(dateStr);
