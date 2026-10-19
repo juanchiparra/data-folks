@@ -5,38 +5,19 @@
   import Seo from "#lib/components/Seo.svelte";
   import Suggest from "#lib/components/Suggest.svelte";
   import { jobs } from "#lib/data/jobs.js";
+  import { isActive, parseDate } from "#lib/utils/dates.js";
 
-  function parseDate(dateStr: string) {
-    return new Date(dateStr + "T00:00:00Z");
-  }
-
-  let now = $state<Date | null>(null);
+  let now = $state(new Date());
 
   onMount(() => {
     now = new Date();
   });
 
-  const sortedJobs = $derived(
-    [...jobs].sort(
-      (a, b) => parseDate(a.expires).getTime() - parseDate(b.expires).getTime(),
-    ),
+  const sortedJobs = [...jobs].sort(
+    (a, b) => parseDate(a.expires).getTime() - parseDate(b.expires).getTime(),
   );
 
-  const activeJobs = $derived.by(() => {
-    const current = now;
-
-    if (!current) {
-      return sortedJobs;
-    }
-
-    const today = Date.UTC(
-      current.getUTCFullYear(),
-      current.getUTCMonth(),
-      current.getUTCDate(),
-    );
-
-    return sortedJobs.filter((job) => parseDate(job.expires).getTime() >= today);
-  });
+  const activeJobs = $derived(sortedJobs.filter((job) => isActive(job.expires, now)));
 </script>
 
 <Seo pageId="jobs" />

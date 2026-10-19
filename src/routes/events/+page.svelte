@@ -5,38 +5,21 @@
   import Seo from "#lib/components/Seo.svelte";
   import Suggest from "#lib/components/Suggest.svelte";
   import { events } from "#lib/data/events.js";
+  import { isActive, parseDate } from "#lib/utils/dates.js";
 
-  function parseDate(dateStr: string) {
-    return new Date(dateStr + "T00:00:00Z");
-  }
-
-  let now = $state<Date | null>(null);
+  let now = $state(new Date());
 
   onMount(() => {
     now = new Date();
   });
 
-  const sortedEvents = $derived(
-    [...events].sort((a, b) => parseDate(a.date).getTime() - parseDate(b.date).getTime()),
+  const sortedEvents = [...events].sort(
+    (a, b) => parseDate(a.date).getTime() - parseDate(b.date).getTime(),
   );
 
-  const activeEvents = $derived.by(() => {
-    const current = now;
-
-    if (!current) {
-      return sortedEvents;
-    }
-
-    const today = Date.UTC(
-      current.getUTCFullYear(),
-      current.getUTCMonth(),
-      current.getUTCDate(),
-    );
-
-    return sortedEvents.filter(
-      (evt) => parseDate(evt.endDate ?? evt.date).getTime() >= today,
-    );
-  });
+  const activeEvents = $derived(
+    sortedEvents.filter((evt) => isActive(evt.endDate ?? evt.date, now)),
+  );
 </script>
 
 <Seo pageId="events" />
