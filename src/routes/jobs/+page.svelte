@@ -13,11 +13,15 @@
     now = new Date();
   });
 
-  const sortedJobs = [...jobs].sort(
-    (a, b) => parseDate(a.expires).getTime() - parseDate(b.expires).getTime(),
-  );
+  const sortedJobs = [...jobs].sort((a, b) => {
+    if (!a.expires) return 1;
+    if (!b.expires) return -1;
+    return parseDate(a.expires).getTime() - parseDate(b.expires).getTime();
+  });
 
-  const activeJobs = $derived(sortedJobs.filter((job) => isActive(job.expires, now)));
+  const activeJobs = $derived(
+    sortedJobs.filter((job) => !job.expires || isActive(job.expires, now)),
+  );
 </script>
 
 <Seo pageId="jobs" />

@@ -39,7 +39,7 @@ export interface Job {
   type: string;
   url: string;
   date: string;
-  expires: string;
+  expires?: string;
 }
 
 export interface Work {
