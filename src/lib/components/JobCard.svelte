@@ -4,11 +4,13 @@
   let { job }: { job: Job } = $props();
 
   const expires = $derived(
-    new Date(job.expires + "T00:00:00Z").toLocaleString("en-US", {
-      month: "short",
-      day: "numeric",
-      timeZone: "UTC",
-    }),
+    job.expires
+      ? new Date(job.expires + "T00:00:00Z").toLocaleString("en-US", {
+          month: "short",
+          day: "numeric",
+          timeZone: "UTC",
+        })
+      : null,
   );
 
   function handleEvent() {
@@ -21,7 +23,7 @@
 <article class="job-card">
   <div class="job-card-header">
     <span class="ui-tag is-interactive">{job.type}</span>
-    <span class="job-date">Expires {expires}</span>
+    <span class="job-date">{expires ? "Expires " + expires : "Ongoing"}</span>
   </div>
 
   <div class="job-card-main">
