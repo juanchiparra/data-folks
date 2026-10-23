@@ -61,4 +61,22 @@ export const jobs: Job[] = [
     date: "2026-10-16",
     expires: "2026-11-02",
   },
+  {
+    id: 7,
+    title: "Assistant Editor, Visuals",
+    company: "The New York Times",
+    location: "Seoul, Korea",
+    type: "Full-time",
+    url: "https://job-boards.greenhouse.io/thenewyorktimes/jobs/4743605005",
+    date: "2026-10-23",
+  },
+  {
+    id: 8,
+    title: "Data Journalist, Ignites and BoardIQ",
+    company: "Financial Times",
+    location: "New York, USA",
+    type: "Full-time",
+    url: "https://job-boards.eu.greenhouse.io/financialtimes33/jobs/4956447101",
+    date: "2026-10-23",
+  },
 ];
