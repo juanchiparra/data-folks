@@ -79,4 +79,13 @@ export const jobs: Job[] = [
     url: "https://job-boards.eu.greenhouse.io/financialtimes33/jobs/4956447101",
     date: "2026-10-23",
   },
+  {
+    id: 9,
+    title: "Senior Information Designer",
+    company: "LINK",
+    location: "Charleston, USA",
+    type: "Full-time",
+    url: "https://job-boards.greenhouse.io/link/jobs/5452701008",
+    date: "2026-10-29",
+  },
 ];
