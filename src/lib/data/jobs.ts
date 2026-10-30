@@ -88,4 +88,13 @@ export const jobs: Job[] = [
     url: "https://job-boards.greenhouse.io/link/jobs/5452701008",
     date: "2026-10-29",
   },
+  {
+    id: 10,
+    title: "Cartographic Designer, Apple Maps",
+    company: "Apple",
+    location: "Cupertino, USA",
+    type: "Full-time",
+    url: "https://jobs.apple.com/en-us/details/200692155/cartographic-designer-apple-maps",
+    date: "2026-10-30",
+  },
 ];
