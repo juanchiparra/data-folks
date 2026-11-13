@@ -117,4 +117,13 @@ export const jobs: Job[] = [
     date: "2026-11-03",
     expires: "2026-12-20",
   },
+  {
+    id: 13,
+    title: "Senior / Digital Graphics Designer, The Business Times",
+    company: "SPH Media",
+    location: "Singapore",
+    type: "Temporary",
+    url: "https://careers.sph.com.sg/job/Senior-Digital-Graphics-Designer%2C-The-Business-Times-(Contract)/60753944/",
+    date: "2026-11-13",
+  },
 ];
