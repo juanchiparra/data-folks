@@ -126,4 +126,14 @@ export const jobs: Job[] = [
     url: "https://careers.sph.com.sg/job/Senior-Digital-Graphics-Designer%2C-The-Business-Times-(Contract)/60753944/",
     date: "2026-11-13",
   },
+  {
+    id: 14,
+    title: "Data Journalist",
+    company: "The Telegraph",
+    location: "London, UK",
+    type: "Full-time",
+    url: "https://careers.telegraph.co.uk/jobs/job-details/Data-Journalist-London",
+    date: "2026-11-16",
+    expires: "2026-11-22",
+  },
 ];
