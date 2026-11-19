@@ -85,4 +85,14 @@ export const events: Event[] = [
     description:
       "A workshop with Stefanie Posavec, Valentina D'Efilippo, and Andy Kirk on creating effective data visualizations that tell a compelling story.",
   },
+  {
+    id: 9,
+    title: "Visualizing Peace Indicators",
+    date: "2026-11-25",
+    location: "Zürich, Switzerland",
+    url: "https://www.meetup.com/datavis-zurich/events/316007234/",
+    type: "Meetup",
+    description:
+      "A Data Vis Zürich meetup where Interactive Things shares how it turned 20,000 personal statements on peace into an online visualization and a physical exhibition.",
+  },
 ];
