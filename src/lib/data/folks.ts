@@ -1024,15 +1024,6 @@ export const folks: Folk[] = [
     },
   },
   {
-    id: 129,
-    data: {
-      name: "Shelly Cheng",
-      page: "https://shellyscheng.github.io/",
-      type: "interactive",
-      image: images["/src/lib/images/shelly-cheng.webp"].default,
-    },
-  },
-  {
     id: 130,
     data: {
       name: "Vinicius Sueiro",
@@ -1075,15 +1066,6 @@ export const folks: Folk[] = [
       page: "https://www.animatevosian.com/",
       type: "interactive",
       image: images["/src/lib/images/ani-matevosian.webp"].default,
-    },
-  },
-  {
-    id: 135,
-    data: {
-      name: "Stephanie Wu",
-      page: "https://www.stephdesigns.net/",
-      type: "interactive",
-      image: images["/src/lib/images/stephanie-wu.webp"].default,
     },
   },
   {

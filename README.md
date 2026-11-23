@@ -138,14 +138,12 @@ The fields were created under my personal opinion. It doesn't mean that this fol
 | Sarah Fawson             | https://www.sarahfawson.com/                                                  | Designer    |
 | Sarah Fossheim           | https://fossheim.io/                                                          | Mastermind  |
 | Sarah Kay Miller         | https://sarahkaymiller.com/                                                   | Designer    |
-| Shelly Cheng             | https://shellyscheng.github.io/                                               | Interactive |
 | Shirley Wu               | https://shirleywu.studio/                                                     | Interactive |
 | Simon Scarr              | https://www.simonscarr.com/                                                   | Designer    |
 | Simone Betito            | https://www.simonebetito.com/                                                 | Interactive |
 | Simran Parwani           | https://simranparwani.github.io/                                              | Interactive |
 | Stefan Pullen            | https://www.stefanpullen.com/                                                 | Designer    |
 | Stefania Guerra          | https://www.behance.net/stegue88e47f                                          | Designer    |
-| Stephanie Wu             | https://www.stephdesigns.net/                                                 | Interactive |
 | Szu Yu Chen              | https://sabrinamochi.github.io/                                               | Interactive |
 | Taylor Maggiacomo        | https://www.taylormaggiacomo.com/                                             | Designer    |
 | Thanh Nguyen             | https://www.thanhxthu.com/                                                    | Designer    |
